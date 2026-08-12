@@ -1,0 +1,20 @@
+//#region data/role-info/riot.js
+var riot_default = [
+	{ heading: "Summary" },
+	"\"On day 3, Minions become Riot & nominees die but nominate an alive player immediately. This must happen.\"",
+	"Riot kills everybody in a panic.",
+	[
+		"On the 3rd day, each player that is nominated dies immediately. Even though they are dead, they nominate again.",
+		"The player that was nominated must nominate again immediately or lose their chance to do so. The Storyteller counts down “3... 2... 1...” to let the player know how long they have to nominate, should they wish to. If they don’t, the Storyteller nominates instead.",
+		"The good team wins if all Riot players are dead. If the last Riot dies and only two players are alive, they do not nominate, and the good team wins.",
+		"If nobody nominates on the 3rd day, the Storyteller makes the 1st nomination instead.",
+		"Minions may change into Riot as the nomination phase begins on the 3rd day."
+	],
+	{ heading: "How to Run" },
+	"On the 1st day, add the DAY 1 reminder to the Grimoire. On the 2nd day, add the DAY 2 reminder to the Grimoire. On the 3rd day, add the DAY 3 reminder to the Grimoire.",
+	"On the 3rd night, wake each Minion. Show the YOU ARE info token, then the Riot token, then put each Minion to sleep. Either now, or later during the 3rd day, replace all Minion tokens with Riot tokens.",
+	"During the 3rd day, each time a player is nominated, they die. Declare that they are dead, and add a shroud immediately. Tell them to nominate again and publicly count down “3... 2... 1...” After they nominate, repeat this process until all Riot are dead, or just 2 players are alive. Declare which team has won.",
+	"If the players do not nominate at all on the 3rd day, or if a nominated player does not nominate before their time runs out, nominate a player – they die and must then nominate again."
+];
+//#endregion
+export { riot_default as default };

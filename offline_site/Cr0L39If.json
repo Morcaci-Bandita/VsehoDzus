@@ -1,0 +1,530 @@
+{
+  "loric": [],
+  "townsfolk": [
+    {
+      "id": "steward",
+      "firstNightReminder": "Point to the good player marked *KNOW*.",
+      "reminders": ["Know"],
+      "setup": false,
+      "flavor": "How DARE you accuse Her Ladyship of wrongdoing? I’ve known her my entire life! All nine years!",
+      "firstNight": 57,
+      "otherNight": 0,
+      "summary": "You start knowing 1 good player.",
+      "icon": "steward",
+      "humanReadableRole": "Steward",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "noble",
+      "firstNightReminder": "Point to all three players marked *KNOW*.",
+      "otherNightReminder": "",
+      "reminders": ["Know", "Know", "Know"],
+      "setup": false,
+      "flavor": "Sarcasm is indeed the lowest form of wit. But speaking in response to your criticism, Sir, it is, nevertheless, a form of wit.",
+      "firstNight": 59,
+      "otherNight": 0,
+      "summary": "You start knowing 3 players, 1 and only 1 of which is evil.",
+      "icon": "noble",
+      "humanReadableRole": "Noble",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "bountyhunter",
+      "firstNightReminder": "Point to the *KNOWN* player.",
+      "otherNightReminder": "If the *KNOWN* player died today or tonight, point to a new *KNOWN* player.",
+      "reminders": ["Known"],
+      "setup": false,
+      "flavor": "Alone, I walk these streets, paved with the sick stench of corruption. Its thickness worms its way into my nostrils, unbidden, burning with revulsion. And anticipation. The illness of this wretched place grows each night. And I... I am the cure.",
+      "firstNight": 63,
+      "otherNight": 81,
+      "jinxes": [
+        {
+          "id": "philosopher",
+          "reason": "If the Philosopher gains the Bounty Hunter ability, a Townsfolk might turn evil."
+        },
+        {
+          "id": "kazali",
+          "reason": "An evil Townsfolk is only created if the Bounty Hunter is still in play after the Kazali acts."
+        }
+      ],
+      "summary": "You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight. [1 Townsfolk is evil]",
+      "icon": "bountyhunter",
+      "humanReadableRole": "Bounty Hunter",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "highpriestess",
+      "firstNightReminder": "Point to a player.",
+      "otherNightReminder": "Point to a player.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.",
+      "firstNight": 68,
+      "otherNight": 86,
+      "summary": "Each night, learn which player the Storyteller believes you should talk to most.",
+      "icon": "highpriestess",
+      "humanReadableRole": "High Priestess",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "balloonist",
+      "firstNightReminder": "Show any player.",
+      "otherNightReminder": "Show a player with a different character type to previously.",
+      "reminders": ["Know"],
+      "setup": true,
+      "flavor": "More heat! Higher! Higher! Più alto! Ahhh... it is so beautiful from up here, don't you agree? Can you see the children fishing by the river, under the willow? Can you see the  glint of the sun on the circus tent-poles? What's this? An old man, alone, passed out in the vineyard? Less heat! Lower! Lower! Vai più in basso!",
+      "firstNight": 60,
+      "otherNight": 78,
+      "summary": "Each night, you learn a player of a different character type than last night. [+0 or +1 Outsider]",
+      "icon": "balloonist",
+      "humanReadableRole": "Balloonist",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "mathematician",
+      "firstNightReminder": "Give a finger signal.",
+      "otherNightReminder": "Give a finger signal.",
+      "reminders": ["Abnormal", "Abnormal", "Abnormal", "Abnormal", "Abnormal"],
+      "setup": false,
+      "flavor": "Any consistent formal system x, within which a certain amount of elementary arithmetic can be carried out is incomplete; that is, there are statements of the language of x which can neither be proved nor disproved in x. Ergo, you are drunk.",
+      "firstNight": 71,
+      "otherNight": 89,
+      "jinxes": [
+        {
+          "id": "chambermaid",
+          "reason": "The Chambermaid learns if the Mathematician wakes tonight or not, even though the Chambermaid wakes first."
+        },
+        {
+          "id": "lunatic",
+          "reason": "The Mathematician learns if the Lunatic attacks a different player(s) than the real Demon attacked."
+        }
+      ],
+      "summary": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",
+      "icon": "mathematician",
+      "humanReadableRole": "Mathematician",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "oracle",
+      "firstNightReminder": "",
+      "otherNightReminder": "Give a finger signal.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Only the chosen may gaze beyond the veil. The dead are restless, and they point in silence toward the icy north.",
+      "firstNight": 0,
+      "otherNight": 75,
+      "summary": "Each night*, you learn how many dead players are evil.",
+      "icon": "oracle",
+      "humanReadableRole": "Oracle",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "slayer",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["No Ability"],
+      "setup": false,
+      "flavor": "Die.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Once per game, during the day, publicly choose a player: if they are the Demon, they die.",
+      "icon": "slayer",
+      "humanReadableRole": "Slayer",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "fisherman",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["No Ability"],
+      "setup": false,
+      "flavor": "This was my favourite part of the river... see how the sunlight makes a rainbow from the monastery to the market? This was the best place for big fish. And the older I get, the bigger they were.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Once per game, during the day, visit the Storyteller for some advice to help your team win.",
+      "icon": "fisherman",
+      "humanReadableRole": "Fisherman",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "juggler",
+      "firstNightReminder": "",
+      "otherNightReminder": "Give a finger signal.",
+      "reminders": ["Correct", "Correct", "Correct", "Correct", "Correct"],
+      "setup": false,
+      "flavor": "For my next trick, as per request, I will need a flower, a bag of beans, a toy snake, a paintbrush, and a motorized gasoline-powered hedge trimming device. I warn you, this trick may be my last. Oh dear.",
+      "firstNight": 0,
+      "otherNight": 77,
+      "summary": "On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct.",
+      "icon": "juggler",
+      "humanReadableRole": "Juggler",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "soldier",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "As David said to Goliath, as Theseus said to the Minotaur, as Arjuna said to Bhagadatta... No.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "You are safe from the Demon.",
+      "icon": "soldier",
+      "humanReadableRole": "Soldier",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "cannibal",
+      "firstNightReminder": "",
+      "otherNightReminder": "Wake the Cannibal and treat them like they have the ability of the most recently killed executee.",
+      "reminders": ["Poisoned", "Lunch"],
+      "setup": false,
+      "flavor": "I don’t like clowns. They taste funny.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "butler",
+          "reason": "If the Cannibal gains the Butler ability, the Cannibal learns this."
+        },
+        {
+          "id": "juggler",
+          "reason": "If the Juggler guesses on their first day and dies by execution, tonight the living Cannibal learns how many guesses the Juggler got correct."
+        },
+        {
+          "id": "zealot",
+          "reason": "If the Cannibal gains the Zealot ability, the Cannibal learns this."
+        },
+        {
+          "id": "poppygrower",
+          "reason": "If the Cannibal eats the Poppy Grower, then dies or loses the Poppy Grower ability, the Demon and Minions learn each other that night."
+        }
+      ],
+      "summary": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
+      "icon": "cannibal",
+      "humanReadableRole": "Cannibal",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "ravenkeeper",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "My birds will avenge me! Fly! Fly, my sweet and dutiful pets! To the manor and to the river! To the alleys and to the salons! Fly!",
+      "firstNight": 0,
+      "otherNight": 68,
+      "summary": "If you die at night, you are woken to choose a player: you learn their character.",
+      "icon": "ravenkeeper",
+      "humanReadableRole": "Ravenkeeper",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    }
+  ],
+  "minion": [
+    {
+      "id": "xaan",
+      "firstNightReminder": "Mark the Xaan with the *NIGHT 1* reminder. If X is 1, mark the Xaan with the *X* reminder token.",
+      "otherNightReminder": "Change the Xaan reminder token to the relevant night. If it is night X, mark the Xaan with the *X* reminder token.",
+      "reminders": ["Night 1", "Night 2", "Night 3", "X"],
+      "setup": true,
+      "flavor": "Down they fall. One by one. By two, by three, by five.",
+      "firstNight": 26,
+      "otherNight": 12,
+      "summary": "On night X, all Townsfolk are poisoned until dusk. [X Outsiders]",
+      "icon": "xaan",
+      "humanReadableRole": "Xaan",
+      "script": "",
+      "type": "Minion"
+    },
+    {
+      "id": "marionette",
+      "firstNightReminder": "Wake the Demon. Point to the player marked *IS THE MARIONETTE* and show the *THIS PLAYER IS* token and the Marionette character token.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": ["Is The Marionette"],
+      "setup": true,
+      "special": [
+        {
+          "type": "selection",
+          "name": "bag-disabled"
+        },
+        {
+          "type": "reveal",
+          "name": "replace-character"
+        }
+      ],
+      "flavor": "Words, words. They're all we have to go on.",
+      "firstNight": 21,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "lilmonsta",
+          "reason": "The Marionette neighbors a Minion, not the Demon. The Marionette is not woken to choose who takes the Lil' Monsta token, and does not learn they are the Marionette if they have the Lil' Monsta token."
+        },
+        {
+          "id": "poppygrower",
+          "reason": "When the Poppy Grower dies, the Demon learns the Marionette but the Marionette learns nothing."
+        },
+        {
+          "id": "snitch",
+          "reason": "The Marionette does not learn 3 not in-play characters. The Demon learns an extra 3 instead."
+        },
+        {
+          "id": "balloonist",
+          "reason": "If the Marionette thinks that they are the Balloonist, +1 Outsider might have been added."
+        },
+        {
+          "id": "damsel",
+          "reason": "The Marionette does not learn that a Damsel is in play."
+        },
+        {
+          "id": "huntsman",
+          "reason": "If the Marionette thinks that they are the Huntsman, the Damsel was added."
+        }
+      ],
+      "summary": "You think you are a good character, but you are not. The Demon knows who you are. [You neighbor the Demon]",
+      "icon": "marionette",
+      "humanReadableRole": "Marionette",
+      "script": "",
+      "type": "Minion"
+    },
+    {
+      "id": "scarletwoman",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Scarlet Woman became the Demon today, show them the *YOU ARE* token, then the Demon token.",
+      "reminders": ["Is The Demon"],
+      "setup": false,
+      "flavor": "You have shown me the secrets of the Council of the Purple Flame. We have lain together in fire and in lust and in beastly commune, and I am forever your servant. But tonight, my dear, I am your master.",
+      "firstNight": 0,
+      "otherNight": 29,
+      "jinxes": [
+        {
+          "id": "fanggu",
+          "reason": "If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu."
+        },
+        {
+          "id": "alhadikhia",
+          "reason": "If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again."
+        }
+      ],
+      "summary": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)",
+      "icon": "scarletwoman",
+      "humanReadableRole": "Scarlet Woman",
+      "script": "Trouble Brewing",
+      "type": "Minion"
+    },
+    {
+      "id": "vizier",
+      "firstNightReminder": "Announce the Vizier player to the group.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "An excellent decision, as always, sire. Such a petty crime as bumping into the Bishop indeed deserves your ‘justice’ and ‘mercy’. Take a stroll in the gardens. Visit the gallery and peruse the sculptures of Von Strauf. Relax, sire. Leave everything… to me.",
+      "firstNight": 74,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "investigator",
+          "reason": "If the Investigator learns that the Vizier is in play, the existence of the Vizier is not announced by the Storyteller."
+        },
+        {
+          "id": "preacher",
+          "reason": "If the Vizier loses their ability, they learn this. If the Vizier is executed while they have their ability, their team wins."
+        },
+        {
+          "id": "courtier",
+          "reason": "If the Vizier loses their ability, they learn this. If the Vizier is executed while they have their ability, their team wins."
+        },
+        {
+          "id": "magician",
+          "reason": "If the Vizier and Magician are both in play, the Demon does not learn the Minions."
+        },
+        {
+          "id": "fearmonger",
+          "reason": "The Vizier wakes with the Fearmonger, learns who they choose and cannot choose to immediately execute that player."
+        },
+        {
+          "id": "politician",
+          "reason": "The Politician might register as evil to the Vizier."
+        },
+        {
+          "id": "alsaahir",
+          "reason": "If the Vizier is in play, the Alsaahir must also guess which Demon(s) are in play."
+        },
+        {
+          "id": "zealot",
+          "reason": "The Zealot might register as evil to the Vizier."
+        }
+      ],
+      "summary": "All players know you are the Vizier. You cannot die during the day. If good voted, you may choose to execute immediately.",
+      "icon": "vizier",
+      "humanReadableRole": "Vizier",
+      "script": "",
+      "type": "Minion"
+    }
+  ],
+  "outsider": [
+    {
+      "id": "butler",
+      "firstNightReminder": "The Butler chooses a player.",
+      "otherNightReminder": "The Butler chooses a player.",
+      "reminders": ["Master"],
+      "setup": false,
+      "flavor": "Yes, sir... No, sir... Certainly, sir.",
+      "firstNight": 52,
+      "otherNight": 84,
+      "jinxes": [
+        {
+          "id": "organgrinder",
+          "reason": "If the Organ Grinder is causing eyes closed voting, the Butler may raise their hand to vote but their vote is only counted if their master voted too."
+        }
+      ],
+      "summary": "Each night, choose a player (not yourself): tomorrow, you may only vote if they are voting too.",
+      "icon": "butler",
+      "humanReadableRole": "Butler",
+      "script": "Trouble Brewing",
+      "type": "Outsider"
+    },
+    {
+      "id": "sweetheart",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now.",
+      "reminders": ["Drunk"],
+      "setup": false,
+      "flavor": "I will never forget her. Never.",
+      "firstNight": 0,
+      "otherNight": 56,
+      "summary": "When you die, 1 player is drunk from now on.",
+      "icon": "sweetheart",
+      "humanReadableRole": "Sweetheart",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    },
+    {
+      "id": "plaguedoctor",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["Storyteller Ability"],
+      "setup": false,
+      "flavor": "Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "eviltwin",
+          "reason": "The Storyteller cannot gain the Evil Twin ability if the Plague Doctor dies."
+        },
+        {
+          "id": "fearmonger",
+          "reason": "If the Plague Doctor dies, a living Minion gains the Fearmonger ability in addition to their own ability, and learns this."
+        },
+        {
+          "id": "goblin",
+          "reason": "If the Plague Doctor dies, a living Minion gains the Goblin ability in addition to their own ability, and learns this."
+        },
+        {
+          "id": "spy",
+          "reason": "If the Plague Doctor dies, a living Minion gains the Spy ability in addition to their own ability, and learns this."
+        },
+        {
+          "id": "scarletwoman",
+          "reason": "If the Plague Doctor dies, a living Minion gains the Scarlet Woman ability in addition to their own ability, and learns this."
+        },
+        {
+          "id": "boomdandy",
+          "reason": "If the Plague Doctor is executed and the Storyteller would gain the Boomdandy ability, the Boomdandy ability triggers immediately."
+        },
+        {
+          "id": "baron",
+          "reason": "If the Storyteller gains the Baron ability, up to two players become not-in-play Outsiders."
+        },
+        {
+          "id": "marionette",
+          "reason": "If the Demon has a neighbor who is alive and a Townsfolk or Outsider when the Plague Doctor dies, that player becomes an evil Marionette. If there is already an extra evil player, this does not happen."
+        }
+      ],
+      "summary": "When you die, the Storyteller gains a Minion ability.",
+      "icon": "plaguedoctor",
+      "humanReadableRole": "Plague Doctor",
+      "script": "",
+      "type": "Outsider"
+    },
+    {
+      "id": "barber",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Barber died today or tonight, show the Demon the *THIS CHARACTER SELECTED YOU* & Barber tokens. If the Demon chose 2 players, wake one at a time. Show the *YOU ARE* token & their new character token.",
+      "reminders": ["Haircuts Tonight"],
+      "setup": false,
+      "flavor": "Did you know that barbery and surgery were once the same profession? No? Well, now you do.",
+      "firstNight": 0,
+      "otherNight": 55,
+      "summary": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.",
+      "icon": "barber",
+      "humanReadableRole": "Barber",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    }
+  ],
+  "traveller": [],
+  "demon": [
+    {
+      "id": "nodashii",
+      "firstNightReminder": "",
+      "otherNightReminder": "The No Dashii chooses a player.",
+      "reminders": ["Dead", "Poisoned", "Poisoned"],
+      "setup": false,
+      "flavor": "By the sins of Arnoch, I feel thy laden stench. By the curs-ed sun and her foul legion of tiny grinning gods, I corrupt thee. By the blessed night and the hidden depths of the horrid and unholy sea, I end thy squalid life upon this plane.",
+      "firstNight": 0,
+      "otherNight": 41,
+      "summary": "Each night*, choose a player: they die. Your 2 Townsfolk neighbors are poisoned.",
+      "icon": "nodashii",
+      "humanReadableRole": "No Dashii",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    },
+    {
+      "id": "imp",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Imp chooses a player.  If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the *YOU ARE* token, then show the Imp token.",
+      "reminders": ["Dead"],
+      "setup": false,
+      "flavor": "We must keep our wits sharp and our sword sharper. Evil walks among us, and will stop at nothing to destroy us good, simple folk, bringing our fine town to ruin. Trust no-one. But, if you must trust someone, trust me.",
+      "firstNight": 0,
+      "otherNight": 35,
+      "summary": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
+      "icon": "imp",
+      "humanReadableRole": "Imp",
+      "script": "Trouble Brewing",
+      "type": "Demon"
+    },
+    {
+      "id": "ojo",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Ojo chooses a character.",
+      "reminders": ["Dead"],
+      "setup": false,
+      "flavor": "Like a bonfire on a moonless night… I see you, mortal.",
+      "firstNight": 0,
+      "otherNight": 45,
+      "summary": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.",
+      "icon": "ojo",
+      "humanReadableRole": "Ojo",
+      "script": "",
+      "type": "Demon"
+    }
+  ],
+  "fabled": []
+}
