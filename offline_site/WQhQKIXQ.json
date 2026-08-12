@@ -1,0 +1,527 @@
+{
+  "loric": [],
+  "townsfolk": [
+    {
+      "id": "clockmaker",
+      "firstNightReminder": "Give a finger signal.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Do not disturb me. The tick must continue, for the circle is a symbol of life and contains all things - all answers - in its divine machinery. I must work.",
+      "firstNight": 54,
+      "otherNight": 0,
+      "summary": "You start knowing how many steps from the Demon to its nearest Minion.",
+      "icon": "clockmaker",
+      "humanReadableRole": "Clockmaker",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "dreamer",
+      "firstNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
+      "otherNightReminder": "The Dreamer points to a player. Show 1 good & 1 evil character token, 1 of which is their character.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "I remember the Clockmaker. The sky was red and it was raining fractal triangles. There was a smell of violets and a bubbling sound. A woman with glowing eyes and a scraggly beard was hissing at the sky. Then, I awoke.",
+      "firstNight": 55,
+      "otherNight": 72,
+      "summary": "Each night, choose a player (not yourself or Travellers): you learn 1 good & 1 evil character, 1 of which is correct.",
+      "icon": "dreamer",
+      "humanReadableRole": "Dreamer",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "snakecharmer",
+      "firstNightReminder": "The Snake Charmer chooses a player. If they chose the Demon: Show the *YOU ARE* & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the *YOU ARE* and Snake Charmer tokens & give a thumbs up.",
+      "otherNightReminder": "The Snake Charmer chooses a player. If they chose the Demon: Show the *YOU ARE* & Demon tokens. Give a thumbs down. Swap the Snake Charmer & Demon tokens. Put the old Snake Charmer to sleep. Wake the old Demon. Show the *YOU ARE* and Snake Charmer tokens & give a thumbs up.",
+      "reminders": ["Poisoned"],
+      "setup": false,
+      "flavor": "Effendi... I am but a humble man, but my pipe is golden and a single tune will tame the wildest djinn, Inshallah. They say that greed hangs more men than rope. But not I, Effendi... not I.",
+      "firstNight": 31,
+      "otherNight": 19,
+      "summary": "Each night, choose an alive player: a chosen Demon swaps characters & alignments with you & is then poisoned.",
+      "icon": "snakecharmer",
+      "humanReadableRole": "Snake Charmer",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "mathematician",
+      "firstNightReminder": "Give a finger signal.",
+      "otherNightReminder": "Give a finger signal.",
+      "reminders": ["Abnormal", "Abnormal", "Abnormal", "Abnormal", "Abnormal"],
+      "setup": false,
+      "flavor": "Any consistent formal system x, within which a certain amount of elementary arithmetic can be carried out is incomplete; that is, there are statements of the language of x which can neither be proved nor disproved in x. Ergo, you are drunk.",
+      "firstNight": 71,
+      "otherNight": 89,
+      "jinxes": [
+        {
+          "id": "chambermaid",
+          "reason": "The Chambermaid learns if the Mathematician wakes tonight or not, even though the Chambermaid wakes first."
+        },
+        {
+          "id": "lunatic",
+          "reason": "The Mathematician learns if the Lunatic attacks a different player(s) than the real Demon attacked."
+        }
+      ],
+      "summary": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",
+      "icon": "mathematician",
+      "humanReadableRole": "Mathematician",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "flowergirl",
+      "firstNightReminder": "",
+      "otherNightReminder": "Either nod or shake your head.",
+      "reminders": ["Demon Voted", "Demon Not Voted"],
+      "setup": false,
+      "flavor": "Yesterday's violets have withered and died, but today my poppies bloom.",
+      "firstNight": 0,
+      "otherNight": 73,
+      "summary": "Each night*, you learn if a Demon voted today.",
+      "icon": "flowergirl",
+      "humanReadableRole": "Flowergirl",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "towncrier",
+      "firstNightReminder": "",
+      "otherNightReminder": "Either nod or shake your head.",
+      "reminders": ["Minions Not Nominated", "Minion Nominated"],
+      "setup": false,
+      "flavor": "Hear ye! Hear ye! Witchcraft in the labyrinth! Genius savant reveals all! Town in danger! Hear Ye!",
+      "firstNight": 0,
+      "otherNight": 74,
+      "summary": "Each night*, you learn if a Minion nominated today.",
+      "icon": "towncrier",
+      "humanReadableRole": "Town Crier",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "oracle",
+      "firstNightReminder": "",
+      "otherNightReminder": "Give a finger signal.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Only the chosen may gaze beyond the veil. The dead are restless, and they point in silence toward the icy north.",
+      "firstNight": 0,
+      "otherNight": 75,
+      "summary": "Each night*, you learn how many dead players are evil.",
+      "icon": "oracle",
+      "humanReadableRole": "Oracle",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "savant",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Seventy-two matchsticks on the floor... the sun sets early but the moon is unchanged... a torn piece of cloth... evil in the manor house... three by three... the one we trusted is not what he seems... green light means magnesium... residue, but the pattern is wrong... Seventy-two matchsticks on the floor...",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
+      "icon": "savant",
+      "humanReadableRole": "Savant",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "seamstress",
+      "firstNightReminder": "The Seamstress might choose 2 players. Nod or shake your head.",
+      "otherNightReminder": "The Seamstress might choose 2 players. Nod or shake your head.",
+      "reminders": ["No Ability"],
+      "setup": false,
+      "flavor": "Did you hear that stranger in the cashmere coat put the word on our young Belle? And she said yes? Well, that's nothing compared to what Harry and that juggler got up to at the fair! The things I could say if I was a tattletale... my, yes.",
+      "firstNight": 56,
+      "otherNight": 76,
+      "summary": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",
+      "icon": "seamstress",
+      "humanReadableRole": "Seamstress",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "philosopher",
+      "firstNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
+      "otherNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
+      "reminders": ["Drunk"],
+      "remindersGlobal": ["Is The Philosopher"],
+      "setup": false,
+      "special": [
+        {
+          "type": "reveal",
+          "name": "replace-character"
+        }
+      ],
+      "flavor": "If anything is real, beer is real. Drink, for tomorrow we may die.",
+      "firstNight": 9,
+      "otherNight": 7,
+      "summary": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
+      "icon": "philosopher",
+      "humanReadableRole": "Philosopher",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "artist",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["No Ability"],
+      "setup": false,
+      "flavor": "Mon Dieu! C'est lumineux! My work, she is... how you say... Magnifique! Dieu est révélé! Oui.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
+      "icon": "artist",
+      "humanReadableRole": "Artist",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "juggler",
+      "firstNightReminder": "",
+      "otherNightReminder": "Give a finger signal.",
+      "reminders": ["Correct", "Correct", "Correct", "Correct", "Correct"],
+      "setup": false,
+      "flavor": "For my next trick, as per request, I will need a flower, a bag of beans, a toy snake, a paintbrush, and a motorized gasoline-powered hedge trimming device. I warn you, this trick may be my last. Oh dear.",
+      "firstNight": 0,
+      "otherNight": 77,
+      "summary": "On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct.",
+      "icon": "juggler",
+      "humanReadableRole": "Juggler",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "sage",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Demon killed the Sage, wake the Sage and point to 2 players, 1 of which is the Demon.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "These mountainous tomes guard the secret, I am sure of it! Twixt word and word, it lies in wait. More candles, boy! More ink! These notes may look arcane, but the infernal puzzle is revealing itself.",
+      "firstNight": 0,
+      "otherNight": 57,
+      "summary": "If the Demon kills you, you learn that it is 1 of 2 players.",
+      "icon": "sage",
+      "humanReadableRole": "Sage",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    }
+  ],
+  "minion": [
+    {
+      "id": "eviltwin",
+      "firstNightReminder": "Wake both twins. Allow eye contact. Show the good twin's character token to the Evil Twin & vice versa.",
+      "otherNightReminder": "",
+      "reminders": ["Twin"],
+      "setup": false,
+      "flavor": "I'm not Sara! I'm Clara! SHE is Sara! Sara is the evil one! Not me!",
+      "firstNight": 35,
+      "otherNight": 0,
+      "summary": "You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.",
+      "icon": "eviltwin",
+      "humanReadableRole": "Evil Twin",
+      "script": "Sects & Violets",
+      "type": "Minion"
+    },
+    {
+      "id": "witch",
+      "firstNightReminder": "The Witch chooses a player.",
+      "otherNightReminder": "The Witch chooses a player.",
+      "reminders": ["Cursed"],
+      "setup": false,
+      "flavor": "Three drops of goat's blood. A lock of hair, torn in anger. The name is spoken, the shadow cast. Walk left foot first down that brambled path, and don't look back.",
+      "firstNight": 36,
+      "otherNight": 23,
+      "summary": "Each night, choose a player: if they nominate tomorrow, they die. If just 3 players live, you lose this ability.",
+      "icon": "witch",
+      "humanReadableRole": "Witch",
+      "script": "Sects & Violets",
+      "type": "Minion"
+    },
+    {
+      "id": "cerenovus",
+      "firstNightReminder": "The Cerenovus chooses a player & a character.  Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",
+      "otherNightReminder": "The Cerenovus chooses a player & a character.  Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",
+      "reminders": ["Mad"],
+      "setup": false,
+      "flavor": "Reality is merely an opinion. Specifically, my opinion.",
+      "firstNight": 37,
+      "otherNight": 24,
+      "jinxes": [
+        {
+          "id": "goblin",
+          "reason": "The Cerenovus may choose to make a player mad that they are the Goblin."
+        }
+      ],
+      "summary": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
+      "icon": "cerenovus",
+      "humanReadableRole": "Cerenovus",
+      "script": "Sects & Violets",
+      "type": "Minion"
+    },
+    {
+      "id": "pithag",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Pit-Hag chooses a player & a character. If they chose a character that is not in play: Put the Pit-Hag to sleep. Wake the target. Show the *YOU ARE* token & their new character token.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Round about the cauldron go; In the poison'd entrails throw; Toad, that under cold stone; Days and nights has thirty-one; Sweated venom sleeping got; Boil thou first in the charmed pot.",
+      "firstNight": 0,
+      "otherNight": 25,
+      "jinxes": [
+        {
+          "id": "damsel",
+          "reason": "If a Pit-Hag creates a Damsel, the Storyteller chooses which player it is."
+        },
+        {
+          "id": "politician",
+          "reason": "If the Pit-Hag turns an evil player into the Politician, they can't turn good due to their own ability."
+        },
+        {
+          "id": "villageidiot",
+          "reason": "If there is a spare token, the Pit-Hag can create an extra Village Idiot. If so, the drunk Village Idiot might change."
+        },
+        {
+          "id": "cultleader",
+          "reason": "If the Pit-Hag turns an evil player into the Cult Leader, they can't turn good due to their own ability."
+        },
+        {
+          "id": "goon",
+          "reason": "If the Pit-Hag turns an evil player into the Goon, they can't turn good due to their own ability."
+        },
+        {
+          "id": "ogre",
+          "reason": "If the Pit-Hag turns an evil player into the Ogre, they can't turn good due to their own ability."
+        }
+      ],
+      "summary": "Each night*, choose a player & a character they become (if not in play). If a Demon is made, deaths tonight are arbitrary.",
+      "icon": "pithag",
+      "humanReadableRole": "Pit-Hag",
+      "script": "Sects & Violets",
+      "type": "Minion"
+    }
+  ],
+  "outsider": [
+    {
+      "id": "mutant",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "I am not a freak! I am a human being! Have mercy!",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "If you are “mad” about being an Outsider, you might be executed.",
+      "icon": "mutant",
+      "humanReadableRole": "Mutant",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    },
+    {
+      "id": "sweetheart",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now.",
+      "reminders": ["Drunk"],
+      "setup": false,
+      "flavor": "I will never forget her. Never.",
+      "firstNight": 0,
+      "otherNight": 56,
+      "summary": "When you die, 1 player is drunk from now on.",
+      "icon": "sweetheart",
+      "humanReadableRole": "Sweetheart",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    },
+    {
+      "id": "barber",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Barber died today or tonight, show the Demon the *THIS CHARACTER SELECTED YOU* & Barber tokens. If the Demon chose 2 players, wake one at a time. Show the *YOU ARE* token & their new character token.",
+      "reminders": ["Haircuts Tonight"],
+      "setup": false,
+      "flavor": "Did you know that barbery and surgery were once the same profession? No? Well, now you do.",
+      "firstNight": 0,
+      "otherNight": 55,
+      "summary": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.",
+      "icon": "barber",
+      "humanReadableRole": "Barber",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    },
+    {
+      "id": "klutz",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Oops.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
+      "icon": "klutz",
+      "humanReadableRole": "Klutz",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    }
+  ],
+  "traveller": [
+    {
+      "id": "barista",
+      "firstNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+      "otherNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+      "reminders": ["Sober & Healthy", "Acts Twice", "?", "?"],
+      "setup": false,
+      "flavor": "A cup of coffee with no cream, Monsieur? I’m terribly sorry, but we’re fresh out of cream — how about with no milk?",
+      "firstNight": 5,
+      "otherNight": 2,
+      "summary": "Each night, until dusk, 1) a player becomes sober, healthy & gets true info, or 2) their ability works twice. They learn which.",
+      "icon": "barista",
+      "humanReadableRole": "Barista",
+      "script": "Sects & Violets",
+      "type": "Traveller"
+    },
+    {
+      "id": "harlot",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Harlot points at any living player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
+      "reminders": ["Dead", "Dead"],
+      "setup": false,
+      "flavor": "Enchanté, Sailor. You look like you need someone to really listen to your troubles. I'm a good listener. Very, very good.",
+      "firstNight": 0,
+      "otherNight": 5,
+      "summary": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.",
+      "icon": "harlot",
+      "humanReadableRole": "Harlot",
+      "script": "Sects & Violets",
+      "type": "Traveller"
+    },
+    {
+      "id": "butcher",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "It tastes like chicken. More please.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Each day, after the 1st execution, you may nominate again.",
+      "icon": "butcher",
+      "humanReadableRole": "Butcher",
+      "script": "Sects & Violets",
+      "type": "Traveller"
+    },
+    {
+      "id": "bonecollector",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Bone Collector either shakes their head no or points at any dead player. If they pointed at any dead player, put the Bone Collector's 'Has Ability' reminder by the chosen player's character token. (They may need to be woken tonight to use it.)",
+      "reminders": ["No Ability", "Has Ability"],
+      "setup": false,
+      "flavor": "I collect many things. Hair. Teeth. Clothes. Fragments of poems. The dreams of lost lovers. My secret arts are not for you to know but my fee is a mere pittance. Bring me the blood of a noblewoman who died of heartbreak under a full moon, and you shall have your answers.",
+      "firstNight": 0,
+      "otherNight": 6,
+      "summary": "Once per game, at night*, choose a dead player: they regain their ability until dusk.",
+      "icon": "bonecollector",
+      "humanReadableRole": "Bone Collector",
+      "script": "Sects & Violets",
+      "type": "Traveller"
+    },
+    {
+      "id": "deviant",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Twas the lady's quip, forsooth.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "If you were funny today, you cannot die by exile.",
+      "icon": "deviant",
+      "humanReadableRole": "Deviant",
+      "script": "Sects & Violets",
+      "type": "Traveller"
+    }
+  ],
+  "demon": [
+    {
+      "id": "fanggu",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Fang Gu chooses a player.  If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the *YOU ARE* and Fang Gu tokens & give a thumbs-down.",
+      "reminders": ["Dead", "Once"],
+      "setup": true,
+      "flavor": "Your walls and your weapons are but smoke in dreams.",
+      "firstNight": 0,
+      "otherNight": 40,
+      "summary": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
+      "icon": "fanggu",
+      "humanReadableRole": "Fang Gu",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    },
+    {
+      "id": "vigormortis",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Vigormortis chooses a player.  If that player is a Minion, poison a neighboring Townsfolk.",
+      "reminders": [
+        "Dead",
+        "Has Ability",
+        "Has Ability",
+        "Has Ability",
+        "Poisoned",
+        "Poisoned",
+        "Poisoned"
+      ],
+      "setup": true,
+      "flavor": "All doors are one door. All keys are one key. All cups are one cup, but whosoever drinketh of the water that I give shall never thirst, but the water shall be in him a well springing up into everlasting life.",
+      "firstNight": 0,
+      "otherNight": 44,
+      "summary": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbor. [-1 Outsider]",
+      "icon": "vigormortis",
+      "humanReadableRole": "Vigormortis",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    },
+    {
+      "id": "nodashii",
+      "firstNightReminder": "",
+      "otherNightReminder": "The No Dashii chooses a player.",
+      "reminders": ["Dead", "Poisoned", "Poisoned"],
+      "setup": false,
+      "flavor": "By the sins of Arnoch, I feel thy laden stench. By the curs-ed sun and her foul legion of tiny grinning gods, I corrupt thee. By the blessed night and the hidden depths of the horrid and unholy sea, I end thy squalid life upon this plane.",
+      "firstNight": 0,
+      "otherNight": 41,
+      "summary": "Each night*, choose a player: they die. Your 2 Townsfolk neighbors are poisoned.",
+      "icon": "nodashii",
+      "humanReadableRole": "No Dashii",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    },
+    {
+      "id": "vortox",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Vortox chooses a player.",
+      "reminders": ["Dead"],
+      "setup": false,
+      "flavor": "Black is White. Right is Wrong. Left is Right. Up is Long. Down is Sight. Short is Blind. Follow me. Answers find.",
+      "firstNight": 0,
+      "otherNight": 42,
+      "jinxes": [
+        {
+          "id": "banshee",
+          "reason": "If the Vortox is in play and the Demon kills the Banshee, the players still learn that the Banshee has died."
+        }
+      ],
+      "summary": "Each night*, choose a player: they die. Townsfolk abilities yield false info. Each day, if no-one is executed, evil wins.",
+      "icon": "vortox",
+      "humanReadableRole": "Vortox",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    }
+  ],
+  "fabled": []
+}

@@ -1,0 +1,111 @@
+{
+  "theme_color": "#2e3136",
+  "background_color": "#2e3136",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "The Grim",
+  "short_name": "The Grim",
+  "shortcuts": [
+    {
+      "name": "Import stats from official app",
+      "url": "/?import=true",
+      "icons": [
+        {
+          "sizes": "96x96",
+          "src": "/shortcuts-qr.png"
+        }
+      ]
+    },
+    {
+      "name": "Import game from other player",
+      "url": "/?scangame=true",
+      "icons": [
+        {
+          "sizes": "96x96",
+          "src": "/shortcuts-qr.png"
+        }
+      ]
+    },
+    {
+      "name": "Roles info",
+      "url": "/roles",
+      "icons": [
+        {
+          "sizes": "96x96",
+          "src": "/shortcuts-roles.png"
+        }
+      ]
+    },
+    {
+      "name": "Nightorder",
+      "url": "/nightorder",
+      "icons": [
+        {
+          "sizes": "96x96",
+          "src": "/shortcuts-nightorder.png"
+        }
+      ]
+    },
+    {
+      "name": "Stats",
+      "url": "/stats",
+      "icons": [
+        {
+          "sizes": "96x96",
+          "src": "/shortcuts-stats.png"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon-192-v4.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512-v4.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512-v4.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "form_factor": "narrow",
+      "src": "/pwa-screenshots-0.png",
+      "sizes": "586x1041",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "narrow",
+      "src": "/pwa-screenshots-1.png",
+      "sizes": "586x1041",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "narrow",
+      "src": "/pwa-screenshots-2.png",
+      "sizes": "586x1041",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "wide",
+      "src": "/pwa-screenshot-wide.png",
+      "sizes": "1024x593",
+      "type": "image/png"
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}

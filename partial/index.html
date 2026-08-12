@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="./workspace.b01f9e22.css"><meta charset="UTF-8"><link rel="stylesheet" href="./workspace.198453e0.css"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="icon" type="image/png" href="./favicon-96x96.4758cf35.png" sizes="96x96"><link rel="icon" type="image/svg+xml" href="./favicon.0a3eb08e.svg"><link rel="icon shortcut" href="./favicon.337e7a99.ico"><link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.d0ab57e3.png"><meta name="apple-mobile-web-app-title" content="Script Tool"><link rel="manifest" href="./static/site.webmanifest"><link rel="alternate" type="application/json+oembed" href="./oembed.f8e8b822.js"><meta name="msapplication-TileColor" content="#583286"><meta name="theme-color" content="#583286"><meta name="description" content="Design your own custom scripts for Blood on the Clocktower!"><meta name="keywords" content="botc, blood, clocktower, script, official, tool, script tool, scripts, blood on the clocktower, character, custom scripts"><meta name="robots" content="index, follow"><meta name="language" content="English"><meta name="author" content="The Pandemonium Institute"><meta property="og:site_name" content="Blood on the Clocktower Script Tool"><meta property="og:image" content="https://script.bloodontheclocktower.com/src/assets/ui/preview.jpg"><meta property="og:type" content="website"><meta property="og:description" content="Design your own custom scripts for Blood on the Clocktower!"><meta property="og:title" content="Blood on the Clocktower Script Tool"><meta property="og:url" content="https://script.bloodontheclocktower.com/"><meta name="author" content="The Pandemonium Institute"><link rel="canonical" href="./"><meta name="description" content="Design your own custom scripts for Blood on the Clocktower!"><meta property="og:description" content="Design your own custom scripts for Blood on the Clocktower!"><meta property="og:image" content="https://script.bloodontheclocktower.com/src/assets/ui/preview.jpg"><meta property="og:type" content="website"><meta property="og:title" content="Blood on the Clocktower Script Tool"><meta property="og:url" content="https://script.bloodontheclocktower.com/"><title>
+      Blood on the Clocktower Script Tool - Build your own custom scripts!
+    </title><link rel="stylesheet" href="./workspace.f48108e2.css"><script src="./workspace.607bad5f.js" defer=""></script><script type="module" src="./workspace.06a6ce2a.js" defer=""></script></head><body>
+    <div class="container">
+      <div class="banner noprint">
+        <button id="toggle-sidebar-button">
+          <i class="fa-bars fa-solid"></i>
+        </button>
+        <div class="logo"></div>
+        <button id="help-dialog-button">
+          <i class="fa-question fa-solid"></i>
+        </button>
+      </div>
+      <div class="script-container">
+        <div class="header-container noprint">
+          <div id="metadata">
+            <form id="script-name-form">
+              <input id="script-name-input" maxlength="100" data-tl-key="script-name" data-tl-attr="placeholder" placeholder="Script name" autocomplete="off">
+            </form>
+            <div class="author-type-container">
+              <form id="script-author-form" data-tl-key="by-author-isolated" data-tl-attr="data-before-content" data-before-content="by">
+                <input id="script-author-input" maxlength="100" data-tl-key="author" data-tl-attr="placeholder" placeholder="Author" autocomplete="off">
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="script"></div>
+      </div>
+
+      <div class="noprint sidebar-container">
+        <div class="logo"></div>
+
+        <div class="tab-nav">
+          <button id="recent-scripts-tab" class="active" data-tl-key="scripts">
+            Scripts
+          </button>
+          <button id="character-selector-tab" data-tl-key="characters">Characters</button>
+        </div>
+
+        <div id="sidebar" class="noprint">
+          <h4>
+            <span data-tl-key="filters">Filters</span>
+            <button id="toggle-filter-visibility">
+              <i class="fa-chevron-down fa-solid"></i>
+            </button>
+          </h4>
+          <div id="filters">
+            <form id="radio-filter-characters" class="nodisplay">
+              <fieldset>
+                <div class="all-radio-container">
+                  <div>
+                    <input id="all-checkbox" type="radio" name="filter-characters" checked="">
+                    <label for="all-checkbox" data-tl-key="show-all">Show All Characters</label>
+                  </div>
+                </div>
+
+                <div class="other-radio-container">
+                  <div>
+                    <input id="townsfolk-checkbox" type="radio" name="filter-characters">
+                    <label for="townsfolk-checkbox" data-tl-key="keyword.townsfolk">Townsfolk</label>
+                  </div>
+
+                  <div>
+                    <input id="outsider-checkbox" type="radio" name="filter-characters">
+                    <label for="outsider-checkbox" data-tl-key="keyword.outsider">Outsider</label>
+                  </div>
+
+                  <div>
+                    <input id="minion-checkbox" type="radio" name="filter-characters">
+                    <label for="minion-checkbox" data-tl-key="keyword.minion">Minion</label>
+                  </div>
+
+                  <div>
+                    <input id="demon-checkbox" type="radio" name="filter-characters">
+                    <label for="demon-checkbox" data-tl-key="keyword.demon">Demon</label>
+                  </div>
+
+                  <div>
+                    <input id="traveller-checkbox" type="radio" name="filter-characters">
+                    <label for="traveller-checkbox" data-tl-key="keyword.traveller">Traveller</label>
+                  </div>
+
+                  <div>
+                    <input id="fabled-checkbox" type="radio" name="filter-characters">
+                    <label for="fabled-checkbox" data-tl-key="keyword.fabled">Fabled</label>
+                  </div>
+
+                  <div>
+                    <input id="loric-checkbox" type="radio" name="filter-characters">
+                    <label for="loric-checkbox" data-tl-key="keyword.loric">Loric</label>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+            <div class="checkboxes-container nodisplay">
+              <form id="base-three-form">
+                <input id="base-three-checkbox" type="checkbox" checked="">
+                <label for="base-three-checkbox" data-tl-key="edition.base-three">Base</label>
+              </form>
+              <form id="experimental-form">
+                <input id="experimental-checkbox" type="checkbox" checked="">
+                <label for="experimental-checkbox" data-tl-key="edition.experimental">Experimental</label>
+              </form>
+              <form id="custom-form">
+                <input id="custom-checkbox" type="checkbox">
+                <label for="custom-checkbox" data-tl-key="edition.homebrew">Homebrew</label>
+              </form>
+            </div>
+            <div id="search-type" class="nodisplay">
+              <form id="search-type-form">
+                <fieldset>
+                  <div>
+                    <input id="search-names" type="radio" name="search-type" value="names" checked="">
+                    <label for="search-names" data-tl-key="search-names">Search names</label>
+                  </div>
+
+                  <div>
+                    <input id="search-abilities" type="radio" name="search-type" value="abilities">
+                    <label for="search-abilities" data-tl-key="search-abilities">Search abilities</label>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="filter-input-container">
+              <form id="filter-input-form">
+                <input id="filter-input" data-tl-key="search-character" data-tl-attr="placeholder" placeholder="Search characters …" autocorrect="off" autocomplete="off" autocapitalize="off">
+              </form>
+              <button id="character-list-sort-type">
+                <span data-tl-key="name">Name</span>
+                <i class="fa-arrow-down-a-z fa-solid"></i>
+              </button>
+            </div>
+          </div>
+          <div class="leaves"></div>
+          <div class="leaves-2"></div>
+          <div class="all-characters-container">
+            <div id="all-characters" tabindex="-1"></div>
+          </div>
+          <div id="randomizer-buttons">
+            <button id="randomize" data-tl-key="randomise-details" data-tl-attr="title" title="The randomiser will fill out your script with random draft characters.">
+              <span data-tl-key="randomise">Randomise!</span>
+              <img src="./dice%20v2.47cdc573.svg">
+            </button>
+            <button id="commit" data-tl-key="commit-all-details" data-tl-attr="title" title="Commit all draft characters to the script.">
+              <i style="position:relative;right:-.725em" class="fa-check fa-solid"></i><i style="position:relative;left:-.725em" class="fa-check fa-solid"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="file-selector" class="noprint">
+          <div id="file-selector-header">
+            <button id="new-script-button" type="button">
+              <i class="fa-plus fa-solid" style="color:#666;padding-right:.25rem"></i>
+              <span data-tl-key="new-script">New Script</span>
+            </button>
+            <div id="capacity-info"></div>
+          </div>
+
+          <div id="script-list"></div>
+          <div class="decoration"></div>
+        </div>
+      </div>
+
+      <div class="noprint options-container">
+        <div class="input-container">
+          <div class="main-buttons-container">
+            <form id="quick-input-form" class="mode-close">
+              <button data-tl-key="toggle-quick-input" data-tl-attr="title" title="Toggle quick-input">
+                <img src="./plus.d29f205a.svg">
+              </button>
+            </form>
+            <form id="import-form">
+              <button title="Import JSON">
+                <img src="./upload.6965f810.svg">
+              </button>
+            </form>
+            <div class="submenu-container">
+              <button id="toggle-export-menu" data-tl-key="export-menu" data-tl-attr="title" title="Export menu">
+                <img src="./export.6688b01b.svg">
+              </button>
+              <div id="export-menu" class="invisible submenu">
+                <form id="export-json-form">
+                  <button data-tl-key="export.download-json">
+                    Download JSON
+                  </button>
+                </form>
+                <form id="copy-json-form">
+                  <button data-tl-key="export.copy-json">
+                    Copy JSON
+                  </button>
+                </form>
+                <form id="link-form">
+                  <button data-tl-key="copy-script-link">
+                    Copy Script Link
+                  </button>
+                </form>
+                <form id="screenshot-form">
+                  <button data-tl-key="export.png">
+                    Export PNG
+                  </button>
+                </form>
+                <form id="print-form">
+                  <button data-tl-key="export.pdf">
+                    Print/Export PDF
+                  </button>
+                </form>
+              </div>
+            </div>
+            <button id="settings-button" data-tl-key="settings-menu" data-tl-attr="title" title="Settings">
+              <img src="./settings.c4645d53.svg">
+            </button>
+          </div>
+        </div>
+        <div class="script-options-container">
+          <form id="autosort-form">
+            <input id="autosort-checkbox" type="checkbox">
+            <label for="autosort-checkbox" data-tl-key="toggle-autosort" data-tl-attr="title" title="Toggle auto-sorting"></label>
+          </form>
+          <div class="interaction-checker-container">
+            <div id="notification-indicator"></div>
+            <button id="interaction-checker-button" data-tl-key="show-script-analytics" data-tl-attr="title" title="Show Script Analytics">
+              <img src="./tick.33b49705.svg">
+            </button>
+          </div>
+        </div>
+
+        <div id="undo-redo-buttons" class="noprint">
+          <button id="undo-button" type="button" data-tl-key="undo" data-tl-attr="title" title="Undo">
+            <img src="./undo.e94b3237.svg">
+          </button>
+          <button id="redo-button" type="button" data-tl-key="redo" data-tl-attr="title" title="Redo">
+            <img src="./redo.666e23c9.svg">
+          </button>
+          <form id="clear-form">
+            <button data-tl-key="clear-script" data-tl-attr="title" title="Clear script">
+              <img src="./bin.ac6df07d.svg">
+            </button>
+          </form>
+          
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <div class="character-form-container hidden noprint">
+      <form id="character-form">
+        <input id="character-input" data-tl-key="quick-add" data-tl-attr="placeholder" placeholder="Search characters …" autocorrect="off" autocomplete="off" autocapitalize="off">
+      </form>
+      <div id="current-matches" class="column noprint"></div>
+    </div>
+
+    <div id="player-count-table">
+      <table>
+        <tbody><tr>
+          <th data-tl-key="keyword.player" data-tl-plural="">Players</th>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15⁺</td>
+        </tr>
+        <tr>
+          <th data-tl-key="keyword.townsfolk" data-tl-plural="">Townsfolk</th>
+          <td>3</td>
+          <td>3</td>
+          <td>5</td>
+          <td>5</td>
+          <td>5</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7</td>
+          <td>9</td>
+          <td>9</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th data-tl-key="keyword.outsider" data-tl-plural="">Outsiders</th>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th data-tl-key="keyword.minion" data-tl-plural="">Minions</th>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>2</td>
+          <td>2</td>
+          <td>3</td>
+          <td>3</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <th data-tl-key="keyword.demon" data-tl-plural="">Demons</th>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody></table>
+    </div>
+
+    <div id="footer">
+      <div class="print-footer">
+        <div class="copyright">© Steven Medway, bloodontheclocktower.com</div>
+        <div class="onlyprint page-one" data-tl-key="print.not-first-night">
+          * Not the first night
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>

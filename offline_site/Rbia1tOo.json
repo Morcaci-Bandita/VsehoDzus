@@ -1,0 +1,545 @@
+{
+  "loric": [],
+  "townsfolk": [
+    {
+      "id": "steward",
+      "firstNightReminder": "Point to the good player marked *KNOW*.",
+      "reminders": ["Know"],
+      "setup": false,
+      "flavor": "How DARE you accuse Her Ladyship of wrongdoing? I’ve known her my entire life! All nine years!",
+      "firstNight": 57,
+      "otherNight": 0,
+      "summary": "You start knowing 1 good player.",
+      "icon": "steward",
+      "humanReadableRole": "Steward",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "shugenja",
+      "firstNightReminder": "Point clockwise or anticlockwise around the circle.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "これは夢。それも夢。すべて夢です。",
+      "firstNight": 61,
+      "otherNight": 0,
+      "summary": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
+      "icon": "shugenja",
+      "humanReadableRole": "Shugenja",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "pixie",
+      "firstNightReminder": "Show the Townsfolk character token marked *MAD*.",
+      "otherNightReminder": "",
+      "reminders": ["Mad", "Has Ability"],
+      "setup": false,
+      "flavor": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town.  Lords with axe chop forest down. What’s yours is mine. What’s mine, divine. Silly little Pixie, me.",
+      "firstNight": 42,
+      "otherNight": 0,
+      "summary": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
+      "icon": "pixie",
+      "humanReadableRole": "Pixie",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "fortuneteller",
+      "firstNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
+      "otherNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
+      "reminders": ["Red Herring"],
+      "setup": false,
+      "flavor": "I sense great evil in your soul! But... that could just be your perfume. I am allergic to Elderberry.",
+      "firstNight": 51,
+      "otherNight": 70,
+      "summary": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
+      "icon": "fortuneteller",
+      "humanReadableRole": "Fortune Teller",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "towncrier",
+      "firstNightReminder": "",
+      "otherNightReminder": "Either nod or shake your head.",
+      "reminders": ["Minions Not Nominated", "Minion Nominated"],
+      "setup": false,
+      "flavor": "Hear ye! Hear ye! Witchcraft in the labyrinth! Genius savant reveals all! Town in danger! Hear Ye!",
+      "firstNight": 0,
+      "otherNight": 74,
+      "summary": "Each night*, you learn if a Minion nominated today.",
+      "icon": "towncrier",
+      "humanReadableRole": "Town Crier",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "monk",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Monk chooses a player.",
+      "reminders": ["Safe"],
+      "setup": false,
+      "flavor": "'Tis an ill and deathly wind that blows tonight. Come, my brother, take shelter in the abbey while the storm rages. By my word, or by my life, you will be safe.",
+      "firstNight": 0,
+      "otherNight": 20,
+      "summary": "Each night*, choose a player (not yourself): they are safe from the Demon tonight.",
+      "icon": "monk",
+      "humanReadableRole": "Monk",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "exorcist",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Exorcist chooses a player.  Put the Exorcist to sleep. If the Exorcist chose the Demon: Wake the Demon. Show the *THIS CHARACTER SELECTED YOU* & Exorcist tokens. Point to the Exorcist.",
+      "reminders": ["Chosen"],
+      "setup": false,
+      "flavor": "We cast you out, every unclean spirit, every satanic power, every onslaught of the infernal adversary, every legion, every diabolical group and sect, in the name and by the power of Our Lord Jesus Christ. We command you, begone and fly far from the Church of God, from the souls made by God in His image and redeemed by the precious blood of the divine Lamb.",
+      "firstNight": 0,
+      "otherNight": 32,
+      "summary": "Each night*, choose a player (different to last night): the Demon, if chosen, learns who you are then doesn't wake tonight.",
+      "icon": "exorcist",
+      "humanReadableRole": "Exorcist",
+      "script": "Bad Moon Rising",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "gossip",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Gossip is due to kill a player, they die.",
+      "reminders": ["Dead"],
+      "setup": false,
+      "flavor": "Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah. Blah.",
+      "firstNight": 0,
+      "otherNight": 53,
+      "summary": "Each day, you may make a public statement. Tonight, if it was true, a player dies.",
+      "icon": "gossip",
+      "humanReadableRole": "Gossip",
+      "script": "Bad Moon Rising",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "artist",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["No Ability"],
+      "setup": false,
+      "flavor": "Mon Dieu! C'est lumineux! My work, she is... how you say... Magnifique! Dieu est révélé! Oui.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Once per game, during the day, privately ask the Storyteller any yes/no question.",
+      "icon": "artist",
+      "humanReadableRole": "Artist",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "seamstress",
+      "firstNightReminder": "The Seamstress might choose 2 players. Nod or shake your head.",
+      "otherNightReminder": "The Seamstress might choose 2 players. Nod or shake your head.",
+      "reminders": ["No Ability"],
+      "setup": false,
+      "flavor": "Did you hear that stranger in the cashmere coat put the word on our young Belle? And she said yes? Well, that's nothing compared to what Harry and that juggler got up to at the fair! The things I could say if I was a tattletale... my, yes.",
+      "firstNight": 56,
+      "otherNight": 76,
+      "summary": "Once per game, at night, choose 2 players (not yourself): you learn if they are the same alignment.",
+      "icon": "seamstress",
+      "humanReadableRole": "Seamstress",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "philosopher",
+      "firstNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
+      "otherNightReminder": "The Philosopher might choose a character. If necessary, swap their character token.",
+      "reminders": ["Drunk"],
+      "remindersGlobal": ["Is The Philosopher"],
+      "setup": false,
+      "special": [
+        {
+          "type": "reveal",
+          "name": "replace-character"
+        }
+      ],
+      "flavor": "If anything is real, beer is real. Drink, for tomorrow we may die.",
+      "firstNight": 9,
+      "otherNight": 7,
+      "summary": "Once per game, at night, choose a good character: gain that ability. If this character is in play, they are drunk.",
+      "icon": "philosopher",
+      "humanReadableRole": "Philosopher",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "huntsman",
+      "firstNightReminder": "The Huntsman might choose a player.  If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the *YOU ARE* info token and their new character token.",
+      "otherNightReminder": "The Huntsman might choose a player.  If that player was the Damsel: Put the Huntsman to sleep. Wake the Damsel and show them the *YOU ARE* info token and their new character token.",
+      "reminders": ["No Ability"],
+      "setup": true,
+      "flavor": "My cabin is warm and sturdy. My axe by the door, my boots drying by the fire, and elk stew a-simmering… Hark! A scream echoes through the valley! The rain and the mud and the cold, cold wind mask the scent of the wolves, but I know the path and my pace is steady. I am coming.",
+      "firstNight": 43,
+      "otherNight": 61,
+      "summary": "Once per game, at night, choose a living player: the Damsel, if chosen, becomes a not-in-play Townsfolk. [+the Damsel]",
+      "icon": "huntsman",
+      "humanReadableRole": "Huntsman",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "soldier",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "As David said to Goliath, as Theseus said to the Minotaur, as Arjuna said to Bhagadatta... No.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "You are safe from the Demon.",
+      "icon": "soldier",
+      "humanReadableRole": "Soldier",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    }
+  ],
+  "minion": [
+    {
+      "id": "godfather",
+      "firstNightReminder": "Show the character tokens of all in-play Outsiders.",
+      "otherNightReminder": "If an Outsider died today, the Godfather chooses a player.",
+      "reminders": ["Died Today", "Dead"],
+      "setup": true,
+      "flavor": "Normally, it's just business. But when you insult my daughter, you insult me. And when you insult me, you insult my family. You really should be more careful - it would be a shame if you had an unfortunate accident.",
+      "firstNight": 32,
+      "otherNight": 52,
+      "summary": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
+      "icon": "godfather",
+      "humanReadableRole": "Godfather",
+      "script": "Bad Moon Rising",
+      "type": "Minion"
+    },
+    {
+      "id": "summoner",
+      "firstNightReminder": "Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 not-in-play good character tokens.",
+      "otherNightReminder": "Change the Summoner reminder token to the relevant night. If it is night 3, the Summoner chooses a player and a Demon. Put the Summoner to sleep. Wake the chosen player. Show the *YOU ARE* token, a thumbs down and the chosen Demon token.",
+      "reminders": ["Night 1", "Night 2", "Night 3"],
+      "setup": true,
+      "flavor": "Hail the guardians of the north; by my intellect, thou art cut. Hail the guardians of the east; by my will, thou art dominated. Hail the guardians of the south; by that which lies beyond, the mystery is revealed. Hail the guardians of the west; a shield in the darkness",
+      "firstNight": 17,
+      "otherNight": 30,
+      "jinxes": [
+        {
+          "id": "clockmaker",
+          "reason": "If the Summoner is in play, the Clockmaker does not receive their information until a Demon is created."
+        },
+        {
+          "id": "alchemist",
+          "reason": "If there is an Alchemist-Summoner in play, the game starts with a Demon in play, as normal. If the Alchemist-Summoner chooses a player, they make that player a Demon but do not change their alignment."
+        },
+        {
+          "id": "poppygrower",
+          "reason": "If the Poppy Grower is alive when the Summoner acts, the Summoner chooses which Demon, but the Storyteller chooses which player."
+        },
+        {
+          "id": "marionette",
+          "reason": "The Marionette neighbors the Summoner. The Summoner knows who the Marionette is."
+        },
+        {
+          "id": "pithag",
+          "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+        },
+        {
+          "id": "hatter",
+          "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+        },
+        {
+          "id": "courtier",
+          "reason": "If the Summoner is drunk on the 3rd night, the Summoner chooses which Demon, but the Storyteller chooses which player."
+        },
+        {
+          "id": "engineer",
+          "reason": "If the Engineer removes a Summoner from play before that Summoner uses their ability, the Summoner uses their ability immediately."
+        },
+        {
+          "id": "zombuul",
+          "reason": "If the Summoner turns a dead player into the Zombuul, the Storyteller treats that player as a Zombuul that has died once."
+        },
+        {
+          "id": "pukka",
+          "reason": "The Summoner may choose a player to become the Pukka on the 2nd night."
+        },
+        {
+          "id": "legion",
+          "reason": "If the Summoner creates Legion, most players (including all evil players) become evil Legion."
+        },
+        {
+          "id": "kazali",
+          "reason": "The Summoner cannot create an in-play Demon. If the Summoner creates a not-in-play Demon, deaths tonight are arbitrary."
+        },
+        {
+          "id": "preacher",
+          "reason": "If the Preacher chose the Summoner on or before the 3rd night, the Summoner chooses which Demon, but the Storyteller chooses which player."
+        },
+        {
+          "id": "lordoftyphon",
+          "reason": "If the Summoner creates a Lord of Typhon, the Lord of Typhon must neighbor a Minion. The other neighbor becomes a not-in-play evil Minion."
+        }
+      ],
+      "summary": "You get 3 bluffs. On the 3rd night, choose a player: they become an evil Demon of your choice. [No Demon]",
+      "icon": "summoner",
+      "humanReadableRole": "Summoner",
+      "script": "",
+      "type": "Minion"
+    },
+    {
+      "id": "assassin",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Assassin might choose a player.",
+      "reminders": ["Dead", "No Ability"],
+      "setup": false,
+      "flavor": "...",
+      "firstNight": 0,
+      "otherNight": 51,
+      "summary": "Once per game, at night*, choose a player: they die, even if for some reason they could not.",
+      "icon": "assassin",
+      "humanReadableRole": "Assassin",
+      "script": "Bad Moon Rising",
+      "type": "Minion"
+    },
+    {
+      "id": "goblin",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["Claimed"],
+      "setup": false,
+      "flavor": "You don’t want to insult the goblins. You really, really don’t. On a completely different note… can I have another piece of cake?",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.",
+      "icon": "goblin",
+      "humanReadableRole": "Goblin",
+      "script": "",
+      "type": "Minion"
+    }
+  ],
+  "outsider": [
+    {
+      "id": "sweetheart",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now.",
+      "reminders": ["Drunk"],
+      "setup": false,
+      "flavor": "I will never forget her. Never.",
+      "firstNight": 0,
+      "otherNight": 56,
+      "summary": "When you die, 1 player is drunk from now on.",
+      "icon": "sweetheart",
+      "humanReadableRole": "Sweetheart",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    },
+    {
+      "id": "recluse",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Garn git ya darn grub ya mitts ofma lorn yasee. Grr. Natsy pikkins yonder southwise ye begittin afta ya! Git! Me harvy no so widda licks and demmons no be fightin' hadsup ne'er ma kin. Git, assay!",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "You might register as evil & as a Minion or Demon, even if dead.",
+      "icon": "recluse",
+      "humanReadableRole": "Recluse",
+      "script": "Trouble Brewing",
+      "type": "Outsider"
+    },
+    {
+      "id": "damsel",
+      "firstNightReminder": "If the Damsel was chosen by the Huntsman, show them the *YOU ARE* info token and their new character token.",
+      "otherNightReminder": "If the Damsel was chosen by the Huntsman, show them the *YOU ARE* info token and their new character token.",
+      "reminders": ["Guess Used"],
+      "setup": false,
+      "flavor": "Don't touch the hair, honey.",
+      "firstNight": 44,
+      "otherNight": 62,
+      "summary": "All Minions know a Damsel is in play. If a Minion publicly guesses you (once), your team loses.",
+      "icon": "damsel",
+      "humanReadableRole": "Damsel",
+      "script": "",
+      "type": "Outsider"
+    },
+    {
+      "id": "drunk",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": ["Is The Drunk"],
+      "setup": true,
+      "special": [
+        {
+          "type": "selection",
+          "name": "bag-disabled"
+        },
+        {
+          "type": "reveal",
+          "name": "replace-character"
+        }
+      ],
+      "flavor": "I’m only a *hic* social drinker, my dear. Admittedly, I am a heavy *burp* socializer.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
+      "icon": "drunk",
+      "humanReadableRole": "Drunk",
+      "script": "Trouble Brewing",
+      "type": "Outsider"
+    }
+  ],
+  "traveller": [
+    {
+      "id": "barista",
+      "firstNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+      "otherNightReminder": "Choose a player, wake them and tell them which Barista power is affecting them. Treat them accordingly (sober/healthy/true info or activate their ability twice).",
+      "reminders": ["Sober & Healthy", "Acts Twice", "?", "?"],
+      "setup": false,
+      "flavor": "A cup of coffee with no cream, Monsieur? I’m terribly sorry, but we’re fresh out of cream — how about with no milk?",
+      "firstNight": 5,
+      "otherNight": 2,
+      "summary": "Each night, until dusk, 1) a player becomes sober, healthy & gets true info, or 2) their ability works twice. They learn which.",
+      "icon": "barista",
+      "humanReadableRole": "Barista",
+      "script": "Sects & Violets",
+      "type": "Traveller"
+    },
+    {
+      "id": "beggar",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Alms for the poor, good Sir? Spare a coin, Madam? Thank you. God bless! You're a right kind soul and no mistake! I'll have some swanky nosh tonight, I will!",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "You must use a vote token to vote. If a dead player gives you theirs, you learn their alignment. You are sober & healthy.",
+      "icon": "beggar",
+      "humanReadableRole": "Beggar",
+      "script": "Trouble Brewing",
+      "type": "Traveller"
+    },
+    {
+      "id": "bishop",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["Nominate Good", "Nominate Evil"],
+      "setup": false,
+      "flavor": "In nomine Patris, et Filii, et Spiritus Sancti… Nos mos Dei. Deus vult de nobis.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Only the Storyteller can nominate. At least 1 opposing player must be nominated each day.",
+      "icon": "bishop",
+      "humanReadableRole": "Bishop",
+      "script": "Bad Moon Rising",
+      "type": "Traveller"
+    },
+    {
+      "id": "harlot",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Harlot points at any living player. Then, put the Harlot to sleep. Wake the chosen player, show them the 'This character selected you' token, then the Harlot token. That player either nods their head yes or shakes their head no. If they nodded their head yes, wake the Harlot and show them the chosen player's character token. Then, you may decide that both players die.",
+      "reminders": ["Dead", "Dead"],
+      "setup": false,
+      "flavor": "Enchanté, Sailor. You look like you need someone to really listen to your troubles. I'm a good listener. Very, very good.",
+      "firstNight": 0,
+      "otherNight": 5,
+      "summary": "Each night*, choose a living player: if they agree, you learn their character, but you both might die.",
+      "icon": "harlot",
+      "humanReadableRole": "Harlot",
+      "script": "Sects & Violets",
+      "type": "Traveller"
+    },
+    {
+      "id": "scapegoat",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Good evening! Thank you for inviting me to the ball. I'm not from around here, but you sure seem like a friendly bunch, by golly. I'm sure we'll get along just dandy. What's all that rope for?",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "If a player of your alignment is executed, you might be executed instead.",
+      "icon": "scapegoat",
+      "humanReadableRole": "Scapegoat",
+      "script": "Trouble Brewing",
+      "type": "Traveller"
+    }
+  ],
+  "demon": [
+    {
+      "id": "yaggababble",
+      "firstNightReminder": "Choose a secret phrase. Wake the Yaggababble and let them know their secret phrase.",
+      "otherNightReminder": "For each time the Yaggababble said the phrase today, you may choose a player. They die.",
+      "reminders": ["Dead", "Dead", "Dead"],
+      "setup": false,
+      "flavor": "Murders inside the Rue Morgue? Фальшивые новости! Hounds on the Baskerville moor? Фальшивые новости! Death while sailing the Nile? Фальшивые новости!",
+      "firstNight": 12,
+      "otherNight": 49,
+      "jinxes": [
+        {
+          "id": "exorcist",
+          "reason": "If the Exorcist chooses the Yaggababble, the Yaggababble ability does not kill tonight."
+        }
+      ],
+      "summary": "You start knowing a secret phrase. For each time you said it publicly today, a player might die.",
+      "icon": "yaggababble",
+      "humanReadableRole": "Yaggababble",
+      "script": "",
+      "type": "Demon"
+    },
+    {
+      "id": "nodashii",
+      "firstNightReminder": "",
+      "otherNightReminder": "The No Dashii chooses a player.",
+      "reminders": ["Dead", "Poisoned", "Poisoned"],
+      "setup": false,
+      "flavor": "By the sins of Arnoch, I feel thy laden stench. By the curs-ed sun and her foul legion of tiny grinning gods, I corrupt thee. By the blessed night and the hidden depths of the horrid and unholy sea, I end thy squalid life upon this plane.",
+      "firstNight": 0,
+      "otherNight": 41,
+      "summary": "Each night*, choose a player: they die. Your 2 Townsfolk neighbors are poisoned.",
+      "icon": "nodashii",
+      "humanReadableRole": "No Dashii",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    },
+    {
+      "id": "ojo",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Ojo chooses a character.",
+      "reminders": ["Dead"],
+      "setup": false,
+      "flavor": "Like a bonfire on a moonless night… I see you, mortal.",
+      "firstNight": 0,
+      "otherNight": 45,
+      "summary": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.",
+      "icon": "ojo",
+      "humanReadableRole": "Ojo",
+      "script": "",
+      "type": "Demon"
+    },
+    {
+      "id": "po",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Po may choose a player OR chooses 3 players if they chose no-one last night.",
+      "reminders": ["Dead", "Dead", "Dead", "3 Attacks"],
+      "setup": false,
+      "flavor": "Would you like a flower? I'm so lonely.",
+      "firstNight": 0,
+      "otherNight": 39,
+      "summary": "Each night*, you may choose a player: they die. If your last choice was no-one, choose 3 players tonight.",
+      "icon": "po",
+      "humanReadableRole": "Po",
+      "script": "Bad Moon Rising",
+      "type": "Demon"
+    }
+  ],
+  "fabled": []
+}

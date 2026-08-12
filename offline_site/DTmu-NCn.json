@@ -1,0 +1,668 @@
+{
+  "General": [
+    {
+      "name": "Flying Blind",
+      "id": "flying-blind",
+      "description": "Start the game without looking at your token; you don't know your role at the start of the game.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "01"
+    },
+    {
+      "name": "Zero Bluff Policy",
+      "id": "zero-bluff-policy",
+      "description": "As demon, do not use any demon bluff during the game.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "02"
+    },
+    {
+      "name": "No ti(m)e to die",
+      "id": "no-ti-m-e-to-die",
+      "description": "During the nominations, achieve a tie while the demon is on the chopping block.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "03"
+    },
+    {
+      "name": "Get out!",
+      "id": "get-out",
+      "description": "As demon, pretend to be an outsider in a game without any outsiders.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "04"
+    },
+    {
+      "name": "One day wonder",
+      "id": "one-day-wonder",
+      "description": "As a 1-day info-only role, make it to the final 3 and win.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "05"
+    },
+    {
+      "name": "Sanity Restored",
+      "id": "sanity-restored",
+      "description": "Stop the madness.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "06"
+    },
+    {
+      "name": "Speedrunners",
+      "id": "speedrunners",
+      "description": "As a townsfolk/outsider in a game with 7+ players, identify the demon and execute them within 2 days.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "07"
+    },
+    {
+      "name": "Do You Swear To Tell the Truth?",
+      "id": "do-you-swear-to-tell-the-truth",
+      "description": "Only speak the truth.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "08"
+    },
+    {
+      "name": "No",
+      "id": "no",
+      "description": "Survive an execution.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "09"
+    },
+    {
+      "name": "Lie Until You Burst",
+      "id": "lie-until-you-burst",
+      "description": "Tell nothing but lies.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "10"
+    },
+    {
+      "name": "Beer?",
+      "id": "beer",
+      "description": "Discover that you have been drunk or poisoned at least once.",
+      "kind": "General",
+      "achieved": false,
+      "nrId": "11"
+    }
+  ],
+  "Trouble Brewing": [
+    {
+      "name": "You're Safe",
+      "id": "youre-safe",
+      "description": "As a monk, protect a player from a demon kill.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "12"
+    },
+    {
+      "name": "Boom, headshot",
+      "id": "boom-headshot",
+      "description": "As a slayer, shoot the demon.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "13"
+    },
+    {
+      "name": "Vote4me",
+      "id": "vote4me",
+      "description": "As mayor, win the game using the mayor's ability.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "14"
+    },
+    {
+      "name": "Oops",
+      "id": "oops",
+      "description": "As evil, win the game by executing the saint.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "15"
+    },
+    {
+      "name": "Gotcha",
+      "id": "gotcha",
+      "description": "As ravenkeeper, locate the demon using your ability.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "16"
+    },
+    {
+      "name": "No, You Do It",
+      "id": "no-you-do-it",
+      "description": "As evil in a 10+ player game, use starpass twice.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "17"
+    },
+    {
+      "name": "But Why Aren't We Winning?",
+      "id": "but-why-arent-we-winning",
+      "description": "As poisoner, poison the saint and execute them on the same day.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "18"
+    },
+    {
+      "name": "Virgin Check",
+      "id": "virgin-check1",
+      "description": "Nominate the virgin and die by execution.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "19"
+    },
+    {
+      "name": "Virgin Check?",
+      "id": "virgin-check2",
+      "description": "Nominate the virgin and survive.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "20"
+    },
+    {
+      "name": "I'm Deliberately Drunk in This Game",
+      "id": "im-deliberately-drunk-in-this-game",
+      "description": "Figure out within 2 days that you are the drunk.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "21"
+    },
+    {
+      "name": "Come at me bro",
+      "id": "come-at-me-bro",
+      "description": "As a soldier, survive a night after being targeted by the demon.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "22"
+    },
+    {
+      "name": "A good neighbor is better than a distant friend",
+      "id": "better-a-good-friend-than-a-next-door-neighbor",
+      "description": "As an empath, execute your two neighbors.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "23"
+    },
+    {
+      "name": "Time for New Management",
+      "id": "time-for-new-management",
+      "description": "As a scarlet woman, become the new demon.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "24"
+    },
+    {
+      "name": "Always So Negative",
+      "id": "always-so-negative",
+      "description": "End the nomination with -1 vote.",
+      "kind": "Trouble Brewing",
+      "achieved": false,
+      "nrId": "25"
+    }
+  ],
+  "Sects & Violets": [
+    {
+      "name": "5 in a row",
+      "id": "5-in-a-row",
+      "description": "As a juggler, obtain a 5 without juggling yourself or a traveler.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "26"
+    },
+    {
+      "name": "I am Not and Therefore I Do Not Exist",
+      "id": "i-am-not-and-therefore-i-do-not-exist",
+      "description": "As a philosopher, choose a role that is not in the game.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "27"
+    },
+    {
+      "name": "Lucky?",
+      "id": "lucky",
+      "description": "As a snake charmer, choose the demon on night 1.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "28"
+    },
+    {
+      "name": "The Smartest Person",
+      "id": "the-smartest-person",
+      "description": "As a savant, deduce the statements correctly for 3 days.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "29"
+    },
+    {
+      "name": "The Last Question",
+      "id": "the-last-question",
+      "description": "As an artist, ask your question to the ST in a final 3.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "30"
+    },
+    {
+      "name": "I'm Cut Out For This",
+      "id": "im-cut-out-for-this",
+      "description": "As a seamstress, find a pair.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "31"
+    },
+    {
+      "name": "Oops²",
+      "id": "oops2",
+      "description": "As a klutz, choose an evil player and lose.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "32"
+    },
+    {
+      "name": "Homemade Gnome",
+      "id": "homemade-gnome",
+      "description": "As a witch, have the chosen player nominate you.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "33"
+    },
+    {
+      "name": "Everything's Better With Two",
+      "id": "everythings-better-with-two",
+      "description": "As a pithag, turn a good player into a demon.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "34"
+    },
+    {
+      "name": "BFFs",
+      "id": "bffs",
+      "description": "As an evil twin, remain together with your good twin in the final 3.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "35"
+    },
+    {
+      "name": "And Then They Call Me Mad",
+      "id": "and-then-they-call-me-mad",
+      "description": "As a cerenovus, drive the mutant mad like another outsider.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "36"
+    },
+    {
+      "name": "Evil Wins by Doing Absolutely Nothing",
+      "id": "evil-wins-by-doing-absolutely-nothing",
+      "description": "As vortox, win by not executing anyone.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "37"
+    },
+    {
+      "name": "Xenophobe",
+      "id": "xenophobe",
+      "description": "As fang-gu in a base game with 2+ outsiders, kill all outsiders.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "38"
+    },
+    {
+      "name": "Who Needs Friends?",
+      "id": "who-needs-friends",
+      "description": "As vigormortis in a game with 10+ players, murder 2 minions.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "39"
+    },
+    {
+      "name": "HAHAHAHA",
+      "id": "hahahaha",
+      "description": "As a deviant, activate your ability three times.",
+      "kind": "Sects & Violets",
+      "achieved": false,
+      "nrId": "40"
+    }
+  ],
+  "Blood Moon Rising": [
+    {
+      "name": "A Little Something for the Atmosphere",
+      "id": "a-little-something-for-the-atmosphere",
+      "description": "As a courtier, get an in-game demon drunk for at least 2 days/nights.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "41"
+    },
+    {
+      "name": "Jackpot!",
+      "id": "jackpot",
+      "description": "As a gambler, bet on a player as the correct demon.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "42"
+    },
+    {
+      "name": "I Always Speak the Truth",
+      "id": "i-always-speak-the-truth",
+      "description": "As a gossip, gossip correctly 3 times.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "43"
+    },
+    {
+      "name": "Everything for the Kids",
+      "id": "everything-for-the-kids",
+      "description": "As a grandmother, die before your grandchild.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "44"
+    },
+    {
+      "name": "I Only Play for the Minions",
+      "id": "i-only-play-for-the-minions",
+      "description": "As a minstrel in a 10+ player game, nominate and execute 1 minion.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "45"
+    },
+    {
+      "name": "Yes boss",
+      "id": "yes-boss",
+      "description": "As a goon, win as evil.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "46"
+    },
+    {
+      "name": "I'm Deliberately Crazy",
+      "id": "im-deliberately-crazy",
+      "description": "As a lunatic, discover after 2 days that you are not the demon.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "47"
+    },
+    {
+      "name": "I'm Deliberately Clumsy",
+      "id": "im-deliberately-clumsy",
+      "description": "As a tinker, find out if your gift has been activated.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "48"
+    },
+    {
+      "name": "Agent 47",
+      "id": "agent-47",
+      "description": "As an assassin, kill a player who could not have died that night.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "49"
+    },
+    {
+      "name": "Better Call Saul",
+      "id": "better-call-saul",
+      "description": "As a devil's advocate, nominate your chosen player 3 times and \"execute\" them.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "50"
+    },
+    {
+      "name": "I'm Gonna Make You an Offer You Can't Refuse",
+      "id": "im-gonna-make-you-an-offer-you-cant-refuse",
+      "description": "As a godfather, make a successful kill.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "51"
+    },
+    {
+      "name": "While You Were Playing Checkers, I Was Playing 4D Chess",
+      "id": "while-you-were-playing-checkers-i-was-playing-4d-chess",
+      "description": "As a mastermind, win using the mastermind ability.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "52"
+    },
+    {
+      "name": "Laziness Is a Sin",
+      "id": "laziness-is-a-sin",
+      "description": "As Po, do not use your \"charge\" gift during the game.",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "53"
+    },
+    {
+      "name": "Death Is Not the End, But a New Beginning",
+      "id": "death-is-not-the-end-but-a-new-beginning",
+      "description": "As a zombuul, win the game while you are \"dead\".",
+      "kind": "Blood Moon Rising",
+      "achieved": false,
+      "nrId": "54"
+    }
+  ],
+  "Custom": [
+    {
+      "name": "I Brew My Own Win",
+      "id": "i-brew-my-own-win",
+      "description": "As an alchemist, win using a minion gift that you have received.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "55"
+    },
+    {
+      "name": "Smoking Is Nice",
+      "id": "smoking-is-nice",
+      "description": "As Alsaahir, win using your own ability.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "56"
+    },
+    {
+      "name": "That Brings Back Memories",
+      "id": "that-brings-back-memories",
+      "description": "As an Amnesiac, get a bingo within 3 days.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "57"
+    },
+    {
+      "name": "Boo",
+      "id": "boo",
+      "description": "As a Banshee, nominate the demon and execute him while your gift is active.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "58"
+    },
+    {
+      "name": "No Target Is Too Small and No Reward Is Too Big",
+      "id": "no-target-is-too-small-and-no-reward-is-too-big",
+      "description": "As a bounty hunter in a 10+ player game, nominate and execute 2 targets that you have received.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "59"
+    },
+    {
+      "name": "Scientology",
+      "id": "scientology",
+      "description": "As a cult leader, win the game by starting a cult.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "60"
+    },
+    {
+      "name": "Plow Partners",
+      "id": "plow-partners",
+      "description": "As a farmer, find the other farmer.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "61"
+    },
+    {
+      "name": "Game Solving Info",
+      "id": "game-solving-info",
+      "description": "As a fisherman, use your gift in the final 3.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "62"
+    },
+    {
+      "name": "Ladies and Gentlemen, We Got Her",
+      "id": "ladies-and-gentlemen-we-got-her",
+      "description": "As a huntsman, use your gift on the damsel.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "63"
+    },
+    {
+      "name": "And For My Next Trick",
+      "id": "and-for-my-next-trick",
+      "description": "As a magician, make a minion believe that you are the demon and the demon believe that you are a minion.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "64"
+    },
+    {
+      "name": "I See What You Don't Pixie",
+      "id": "i-see-what-you-dont-pixie",
+      "description": "As a pixie, receive the gift of another in-game townsfolk role.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "65"
+    },
+    {
+      "name": "In Flanders Fields",
+      "id": "in-flanders-fields",
+      "description": "As a poppy grower, survive until the final 3.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "66"
+    },
+    {
+      "name": "And on the 7th Day",
+      "id": "and-on-the-7th-day",
+      "description": "As a preacher in a 10+ player game, prevent all minions from using their ability.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "67"
+    },
+    {
+      "name": "No, You Are the Dummy",
+      "id": "no-you-are-the-dummy",
+      "description": "Deduce who the drunk is if there are at least 2 village idiots.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "68"
+    },
+    {
+      "name": "Oops³",
+      "id": "oops3",
+      "description": "As evil, win by finding the damsel.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "69"
+    },
+    {
+      "name": "GOLEM SMA…?",
+      "id": "golem-sma",
+      "description": "As a Golem, nominate the demon.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "70"
+    },
+    {
+      "name": "I'll Start My Own Team With Blackjack And Hookers",
+      "id": "i-start-my-own-team-with-blackjack-and-hookers",
+      "description": "As an ogre, stay up-to-date with your team.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "71"
+    },
+    {
+      "name": "I No Longer Have an Active Memory Of That",
+      "id": "i-no-longer-have-an-active-memory-of-that",
+      "description": "As a politician, win by switching teams.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "72"
+    },
+    {
+      "name": "Every Puzzle Has an Answer",
+      "id": "every-puzzle-has-an-answer",
+      "description": "As a puzzlemaster, find the puzzledrunk.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "73"
+    },
+    {
+      "name": "Always End With a Bang",
+      "id": "always-end-with-a-bang",
+      "description": "As a boomdandy, win the game after your gift has been activated.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "74"
+    },
+    {
+      "name": "The End Has Come",
+      "id": "the-end-has-come",
+      "description": "As a fearmonger, win the game through your own win condition.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "75"
+    },
+    {
+      "name": "Annoying Bully",
+      "id": "annoying-bully",
+      "description": "As a goblin, win the game through your own win condition.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "76"
+    },
+    {
+      "name": "I Told You So",
+      "id": "i-told-you-so",
+      "description": "As a harpy, make a player angry at your own demon.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "77"
+    },
+    {
+      "name": "I Am Policy",
+      "id": "i-am-policy",
+      "description": "As a vizier, force an execution 3 times.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "78"
+    },
+    {
+      "name": "1 Outsider Ah Ah Ah",
+      "id": "1-outsider-ah-ah-ah",
+      "description": "As xaan, deduce how many outsiders there are.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "79"
+    },
+    {
+      "name": "I Choose Myself",
+      "id": "i-choose-myself",
+      "description": "As Al-Hadikhia, select yourself first and survive.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "80"
+    },
+    {
+      "name": "I Saw That Coming",
+      "id": "i-saw-that-coming",
+      "description": "As ojo, select only in-game roles.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "81"
+    },
+    {
+      "name": "Blah Blah Blah Blah Blah",
+      "id": "blah-blah-blah-blah-blah",
+      "description": "As Yaggababble, say your sentence 5 times in one day.",
+      "kind": "Custom",
+      "achieved": false,
+      "nrId": "82"
+    }
+  ]
+}
