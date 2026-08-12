@@ -1,0 +1,446 @@
+{
+  "loric": [],
+  "townsfolk": [
+    {
+      "id": "investigator",
+      "firstNightReminder": "Show the Minion character token. Point to both the *MINION* and *WRONG* players.",
+      "otherNightReminder": "",
+      "reminders": ["Minion", "Wrong"],
+      "setup": false,
+      "flavor": "It is a fine night for a stroll, wouldn't you say, Mister Morozov? Or should I say... BARON Morozov?",
+      "firstNight": 48,
+      "otherNight": 0,
+      "summary": "You start knowing that 1 of 2 players is a particular Minion.",
+      "icon": "investigator",
+      "humanReadableRole": "Investigator",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "grandmother",
+      "firstNightReminder": "Point to the grandchild player & show their character token.",
+      "otherNightReminder": "If the grandchild was killed by the Demon, the Grandmother dies too.",
+      "reminders": ["Grandchild", "Dead"],
+      "setup": false,
+      "flavor": "Take a jacket if you go outside, dearie. And your thermos. And your scarf. I have a weak heart, you know. Whatever would I do if you caught cold...or worse?",
+      "firstNight": 53,
+      "otherNight": 67,
+      "summary": "You start knowing a good player & their character. If the Demon kills them, you die too.",
+      "icon": "grandmother",
+      "humanReadableRole": "Grandmother",
+      "script": "Bad Moon Rising",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "shugenja",
+      "firstNightReminder": "Point clockwise or anticlockwise around the circle.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "これは夢。それも夢。すべて夢です。",
+      "firstNight": 61,
+      "otherNight": 0,
+      "summary": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
+      "icon": "shugenja",
+      "humanReadableRole": "Shugenja",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "pixie",
+      "firstNightReminder": "Show the Townsfolk character token marked *MAD*.",
+      "otherNightReminder": "",
+      "reminders": ["Mad", "Has Ability"],
+      "setup": false,
+      "flavor": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town.  Lords with axe chop forest down. What’s yours is mine. What’s mine, divine. Silly little Pixie, me.",
+      "firstNight": 42,
+      "otherNight": 0,
+      "summary": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
+      "icon": "pixie",
+      "humanReadableRole": "Pixie",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "highpriestess",
+      "firstNightReminder": "Point to a player.",
+      "otherNightReminder": "Point to a player.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.",
+      "firstNight": 68,
+      "otherNight": 86,
+      "summary": "Each night, learn which player the Storyteller believes you should talk to most.",
+      "icon": "highpriestess",
+      "humanReadableRole": "High Priestess",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "general",
+      "firstNightReminder": "Give a thumb signal.",
+      "otherNightReminder": "Give a thumb signal.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "I don’t have time for quotes.",
+      "firstNight": 69,
+      "otherNight": 87,
+      "summary": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
+      "icon": "general",
+      "humanReadableRole": "General",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "flowergirl",
+      "firstNightReminder": "",
+      "otherNightReminder": "Either nod or shake your head.",
+      "reminders": ["Demon Voted", "Demon Not Voted"],
+      "setup": false,
+      "flavor": "Yesterday's violets have withered and died, but today my poppies bloom.",
+      "firstNight": 0,
+      "otherNight": 73,
+      "summary": "Each night*, you learn if a Demon voted today.",
+      "icon": "flowergirl",
+      "humanReadableRole": "Flowergirl",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "undertaker",
+      "firstNightReminder": "",
+      "otherNightReminder": "If a player was executed today, show their character token.",
+      "reminders": ["Died Today"],
+      "setup": false,
+      "flavor": "Hmmm....what have we here? The left boot is worn down to the heel, with flint shavings under the tongue. This is the garb of a Military man.",
+      "firstNight": 0,
+      "otherNight": 71,
+      "summary": "Each night*, you learn which character died by execution today.",
+      "icon": "undertaker",
+      "humanReadableRole": "Undertaker",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "savant",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Seventy-two matchsticks on the floor... the sun sets early but the moon is unchanged... a torn piece of cloth... evil in the manor house... three by three... the one we trusted is not what he seems... green light means magnesium... residue, but the pattern is wrong... Seventy-two matchsticks on the floor...",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
+      "icon": "savant",
+      "humanReadableRole": "Savant",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "farmer",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Farmer died tonight, wake an alive good player. Show them the *YOU ARE* info token and a Farmer character token. Replace their previous token with the Farmer token.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Even the high and mighty need food on the table. Without us, the city starves.",
+      "firstNight": 0,
+      "otherNight": 64,
+      "summary": "When you die at night, an alive good player becomes a Farmer.",
+      "icon": "farmer",
+      "humanReadableRole": "Farmer",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "banshee",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Banshee was killed by the Demon tonight, announce to all players that the Banshee has died.",
+      "reminders": ["Has Ability"],
+      "setup": false,
+      "flavor": "Gorm do shúile, dearg do ghruaig, ní bheidh sé i bhfad, is a mbeidh tú san uaigh.",
+      "firstNight": 0,
+      "otherNight": 58,
+      "summary": "If the Demon kills you, all players learn this. From now on, you may nominate twice per day and vote twice per nomination.",
+      "icon": "banshee",
+      "humanReadableRole": "Banshee",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "alsaahir",
+      "reminders": [],
+      "setup": false,
+      "flavor": "I am here because of you, and you are here because of me.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Each day, if you publicly guess which players are Minion(s) and which are Demon(s), good wins.",
+      "icon": "alsaahir",
+      "humanReadableRole": "Alsaahir",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "atheist",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": true,
+      "special": [
+        {
+          "type": "selection",
+          "name": "bag-duplicate"
+        }
+      ],
+      "flavor": "Let us disperse with unnecessary conjecture and silly paranoia. There is a perfectly rational explanation for everything. Yes, a teacup may indeed be orbiting the planet, too small to see, but I shall drink my tea from the very real china in my very real hands.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "The Storyteller can break the game rules, and if executed, good wins, even if you are dead. [No evil characters]",
+      "icon": "atheist",
+      "humanReadableRole": "Atheist",
+      "script": "",
+      "type": "Townsfolk"
+    }
+  ],
+  "minion": [
+    {
+      "id": "harpy",
+      "firstNightReminder": "The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the *THIS CHARACTER SELECTED YOU* token, the Harpy token, then point to the 2nd target.",
+      "otherNightReminder": "The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the *THIS CHARACTER SELECTED YOU* token, the Harpy token, then point to the 2nd target.",
+      "reminders": ["Mad", "2nd"],
+      "setup": false,
+      "flavor": "So fair a day I never did see, nor so fowl a presence hanging over me.",
+      "firstNight": 39,
+      "otherNight": 27,
+      "summary": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or one or both might die.",
+      "icon": "harpy",
+      "humanReadableRole": "Harpy",
+      "script": "",
+      "type": "Minion"
+    },
+    {
+      "id": "marionette",
+      "firstNightReminder": "Wake the Demon. Point to the player marked *IS THE MARIONETTE* and show the *THIS PLAYER IS* token and the Marionette character token.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": ["Is The Marionette"],
+      "setup": true,
+      "special": [
+        {
+          "type": "selection",
+          "name": "bag-disabled"
+        },
+        {
+          "type": "reveal",
+          "name": "replace-character"
+        }
+      ],
+      "flavor": "Words, words. They're all we have to go on.",
+      "firstNight": 21,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "lilmonsta",
+          "reason": "The Marionette neighbors a Minion, not the Demon. The Marionette is not woken to choose who takes the Lil' Monsta token, and does not learn they are the Marionette if they have the Lil' Monsta token."
+        },
+        {
+          "id": "poppygrower",
+          "reason": "When the Poppy Grower dies, the Demon learns the Marionette but the Marionette learns nothing."
+        },
+        {
+          "id": "snitch",
+          "reason": "The Marionette does not learn 3 not in-play characters. The Demon learns an extra 3 instead."
+        },
+        {
+          "id": "balloonist",
+          "reason": "If the Marionette thinks that they are the Balloonist, +1 Outsider might have been added."
+        },
+        {
+          "id": "damsel",
+          "reason": "The Marionette does not learn that a Damsel is in play."
+        },
+        {
+          "id": "huntsman",
+          "reason": "If the Marionette thinks that they are the Huntsman, the Damsel was added."
+        }
+      ],
+      "summary": "You think you are a good character, but you are not. The Demon knows who you are. [You neighbor the Demon]",
+      "icon": "marionette",
+      "humanReadableRole": "Marionette",
+      "script": "",
+      "type": "Minion"
+    },
+    {
+      "id": "cerenovus",
+      "firstNightReminder": "The Cerenovus chooses a player & a character.  Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",
+      "otherNightReminder": "The Cerenovus chooses a player & a character.  Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",
+      "reminders": ["Mad"],
+      "setup": false,
+      "flavor": "Reality is merely an opinion. Specifically, my opinion.",
+      "firstNight": 37,
+      "otherNight": 24,
+      "jinxes": [
+        {
+          "id": "goblin",
+          "reason": "The Cerenovus may choose to make a player mad that they are the Goblin."
+        }
+      ],
+      "summary": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
+      "icon": "cerenovus",
+      "humanReadableRole": "Cerenovus",
+      "script": "Sects & Violets",
+      "type": "Minion"
+    },
+    {
+      "id": "scarletwoman",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Scarlet Woman became the Demon today, show them the *YOU ARE* token, then the Demon token.",
+      "reminders": ["Is The Demon"],
+      "setup": false,
+      "flavor": "You have shown me the secrets of the Council of the Purple Flame. We have lain together in fire and in lust and in beastly commune, and I am forever your servant. But tonight, my dear, I am your master.",
+      "firstNight": 0,
+      "otherNight": 29,
+      "jinxes": [
+        {
+          "id": "fanggu",
+          "reason": "If the Fang Gu chooses an Outsider and dies, the Scarlet Woman does not become the Fang Gu."
+        },
+        {
+          "id": "alhadikhia",
+          "reason": "If there are two living Al-Hadikhias, the Scarlet Woman Al-Hadikhia becomes the Scarlet Woman again."
+        }
+      ],
+      "summary": "If there are 5 or more players alive & the Demon dies, you become the Demon. (Travellers don't count.)",
+      "icon": "scarletwoman",
+      "humanReadableRole": "Scarlet Woman",
+      "script": "Trouble Brewing",
+      "type": "Minion"
+    },
+    {
+      "id": "godfather",
+      "firstNightReminder": "Show the character tokens of all in-play Outsiders.",
+      "otherNightReminder": "If an Outsider died today, the Godfather chooses a player.",
+      "reminders": ["Died Today", "Dead"],
+      "setup": true,
+      "flavor": "Normally, it's just business. But when you insult my daughter, you insult me. And when you insult me, you insult my family. You really should be more careful - it would be a shame if you had an unfortunate accident.",
+      "firstNight": 32,
+      "otherNight": 52,
+      "summary": "You start knowing which Outsiders are in play. If 1 died today, choose a player tonight: they die. [-1 or +1 Outsider]",
+      "icon": "godfather",
+      "humanReadableRole": "Godfather",
+      "script": "Bad Moon Rising",
+      "type": "Minion"
+    }
+  ],
+  "outsider": [
+    {
+      "id": "ogre",
+      "firstNightReminder": "The Ogre points to a player.",
+      "reminders": ["Friend"],
+      "setup": false,
+      "flavor": "<grunt><grin></grunt>",
+      "firstNight": 67,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "recluse",
+          "reason": "If the Recluse registers as evil to the Ogre, the Ogre learns that they are evil."
+        }
+      ],
+      "summary": "On your 1st night, choose a player (not yourself): you become their alignment (you don't know which) even if drunk or poisoned.",
+      "icon": "ogre",
+      "humanReadableRole": "Ogre",
+      "script": "",
+      "type": "Outsider"
+    },
+    {
+      "id": "sweetheart",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Sweetheart died, a player became drunk immediately. If you haven't done this yet, do so now.",
+      "reminders": ["Drunk"],
+      "setup": false,
+      "flavor": "I will never forget her. Never.",
+      "firstNight": 0,
+      "otherNight": 56,
+      "summary": "When you die, 1 player is drunk from now on.",
+      "icon": "sweetheart",
+      "humanReadableRole": "Sweetheart",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    },
+    {
+      "id": "drunk",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": ["Is The Drunk"],
+      "setup": true,
+      "special": [
+        {
+          "type": "selection",
+          "name": "bag-disabled"
+        },
+        {
+          "type": "reveal",
+          "name": "replace-character"
+        }
+      ],
+      "flavor": "I’m only a *hic* social drinker, my dear. Admittedly, I am a heavy *burp* socializer.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "You do not know you are the Drunk. You think you are a Townsfolk character, but you are not.",
+      "icon": "drunk",
+      "humanReadableRole": "Drunk",
+      "script": "Trouble Brewing",
+      "type": "Outsider"
+    },
+    {
+      "id": "barber",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Barber died today or tonight, show the Demon the *THIS CHARACTER SELECTED YOU* & Barber tokens. If the Demon chose 2 players, wake one at a time. Show the *YOU ARE* token & their new character token.",
+      "reminders": ["Haircuts Tonight"],
+      "setup": false,
+      "flavor": "Did you know that barbery and surgery were once the same profession? No? Well, now you do.",
+      "firstNight": 0,
+      "otherNight": 55,
+      "summary": "If you died today or tonight, the Demon may choose 2 players (not another Demon) to swap characters.",
+      "icon": "barber",
+      "humanReadableRole": "Barber",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    },
+    {
+      "id": "hatter",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Hatter died today or tonight, wake Minions and Demons, allow them to choose new characters.",
+      "reminders": ["Tea Party Tonight"],
+      "setup": false,
+      "flavor": "One Hat. Too Hat. Three Hat. Tea Hat. Fore Hat. Thrive Hat. Six Hat. Sticks Hat.",
+      "firstNight": 0,
+      "otherNight": 54,
+      "summary": "If you died today or tonight, the Minion & Demon players may choose new Minion & Demon characters to be.",
+      "icon": "hatter",
+      "humanReadableRole": "Hatter",
+      "script": "",
+      "type": "Outsider"
+    }
+  ],
+  "traveller": [],
+  "demon": [
+    {
+      "id": "ojo",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Ojo chooses a character.",
+      "reminders": ["Dead"],
+      "setup": false,
+      "flavor": "Like a bonfire on a moonless night… I see you, mortal.",
+      "firstNight": 0,
+      "otherNight": 45,
+      "summary": "Each night*, choose a character: they die. If they are not in play, the Storyteller chooses who dies.",
+      "icon": "ojo",
+      "humanReadableRole": "Ojo",
+      "script": "",
+      "type": "Demon"
+    }
+  ],
+  "fabled": []
+}

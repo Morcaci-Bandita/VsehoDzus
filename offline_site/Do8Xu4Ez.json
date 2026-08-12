@@ -1,0 +1,539 @@
+{
+  "loric": [],
+  "townsfolk": [
+    {
+      "id": "noble",
+      "firstNightReminder": "Point to all three players marked *KNOW*.",
+      "otherNightReminder": "",
+      "reminders": ["Know", "Know", "Know"],
+      "setup": false,
+      "flavor": "Sarcasm is indeed the lowest form of wit. But speaking in response to your criticism, Sir, it is, nevertheless, a form of wit.",
+      "firstNight": 59,
+      "otherNight": 0,
+      "summary": "You start knowing 3 players, 1 and only 1 of which is evil.",
+      "icon": "noble",
+      "humanReadableRole": "Noble",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "chef",
+      "firstNightReminder": "Give a finger signal.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "This evening's reservations seem odd. Never before has Mrs. Mayweather kept company with that scamp from Hudson Lane. Yet, tonight, they have a table for two. Strange.",
+      "firstNight": 49,
+      "otherNight": 0,
+      "summary": "You start knowing how many pairs of evil players there are.",
+      "icon": "chef",
+      "humanReadableRole": "Chef",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "pixie",
+      "firstNightReminder": "Show the Townsfolk character token marked *MAD*.",
+      "otherNightReminder": "",
+      "reminders": ["Mad", "Has Ability"],
+      "setup": false,
+      "flavor": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town.  Lords with axe chop forest down. What’s yours is mine. What’s mine, divine. Silly little Pixie, me.",
+      "firstNight": 42,
+      "otherNight": 0,
+      "summary": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
+      "icon": "pixie",
+      "humanReadableRole": "Pixie",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "highpriestess",
+      "firstNightReminder": "Point to a player.",
+      "otherNightReminder": "Point to a player.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.",
+      "firstNight": 68,
+      "otherNight": 86,
+      "summary": "Each night, learn which player the Storyteller believes you should talk to most.",
+      "icon": "highpriestess",
+      "humanReadableRole": "High Priestess",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "mathematician",
+      "firstNightReminder": "Give a finger signal.",
+      "otherNightReminder": "Give a finger signal.",
+      "reminders": ["Abnormal", "Abnormal", "Abnormal", "Abnormal", "Abnormal"],
+      "setup": false,
+      "flavor": "Any consistent formal system x, within which a certain amount of elementary arithmetic can be carried out is incomplete; that is, there are statements of the language of x which can neither be proved nor disproved in x. Ergo, you are drunk.",
+      "firstNight": 71,
+      "otherNight": 89,
+      "jinxes": [
+        {
+          "id": "chambermaid",
+          "reason": "The Chambermaid learns if the Mathematician wakes tonight or not, even though the Chambermaid wakes first."
+        },
+        {
+          "id": "lunatic",
+          "reason": "The Mathematician learns if the Lunatic attacks a different player(s) than the real Demon attacked."
+        }
+      ],
+      "summary": "Each night, you learn how many players’ abilities worked abnormally (since dawn) due to another character's ability.",
+      "icon": "mathematician",
+      "humanReadableRole": "Mathematician",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "flowergirl",
+      "firstNightReminder": "",
+      "otherNightReminder": "Either nod or shake your head.",
+      "reminders": ["Demon Voted", "Demon Not Voted"],
+      "setup": false,
+      "flavor": "Yesterday's violets have withered and died, but today my poppies bloom.",
+      "firstNight": 0,
+      "otherNight": 73,
+      "summary": "Each night*, you learn if a Demon voted today.",
+      "icon": "flowergirl",
+      "humanReadableRole": "Flowergirl",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "savant",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Seventy-two matchsticks on the floor... the sun sets early but the moon is unchanged... a torn piece of cloth... evil in the manor house... three by three... the one we trusted is not what he seems... green light means magnesium... residue, but the pattern is wrong... Seventy-two matchsticks on the floor...",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Each day, you may visit the Storyteller to learn 2 things in private: 1 is true & 1 is false.",
+      "icon": "savant",
+      "humanReadableRole": "Savant",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "amnesiac",
+      "firstNightReminder": "Run the Amnesiac's ability, if applicable.",
+      "otherNightReminder": "Run the Amnesiac's ability, if applicable.",
+      "reminders": ["?", "?", "?"],
+      "setup": false,
+      "flavor": "Wait. What. Who? Oh, ok. Wait. What?",
+      "firstNight": 45,
+      "otherNight": 63,
+      "summary": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
+      "icon": "amnesiac",
+      "humanReadableRole": "Amnesiac",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "juggler",
+      "firstNightReminder": "",
+      "otherNightReminder": "Give a finger signal.",
+      "reminders": ["Correct", "Correct", "Correct", "Correct", "Correct"],
+      "setup": false,
+      "flavor": "For my next trick, as per request, I will need a flower, a bag of beans, a toy snake, a paintbrush, and a motorized gasoline-powered hedge trimming device. I warn you, this trick may be my last. Oh dear.",
+      "firstNight": 0,
+      "otherNight": 77,
+      "summary": "On your 1st day, publicly guess up to 5 players' characters. That night, you learn how many you got correct.",
+      "icon": "juggler",
+      "humanReadableRole": "Juggler",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "fisherman",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["No Ability"],
+      "setup": false,
+      "flavor": "This was my favourite part of the river... see how the sunlight makes a rainbow from the monastery to the market? This was the best place for big fish. And the older I get, the bigger they were.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Once per game, during the day, visit the Storyteller for some advice to help your team win.",
+      "icon": "fisherman",
+      "humanReadableRole": "Fisherman",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "farmer",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Farmer died tonight, wake an alive good player. Show them the *YOU ARE* info token and a Farmer character token. Replace their previous token with the Farmer token.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Even the high and mighty need food on the table. Without us, the city starves.",
+      "firstNight": 0,
+      "otherNight": 64,
+      "summary": "When you die at night, an alive good player becomes a Farmer.",
+      "icon": "farmer",
+      "humanReadableRole": "Farmer",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "magician",
+      "firstNightReminder": "Include the Magician in the Minion and Demon Info steps.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "1... 2... Abra... 3... 4... Cadabra... *poof!* And, as you can see, ladies and gentlemen, Captain Farnsworth’s bag of gold has disappeared! Gone! Without a trace! Thank you, and goodnight!",
+      "firstNight": 13,
+      "otherNight": 0,
+      "summary": "The Demon thinks you are a Minion. Minions think you are a Demon.",
+      "icon": "magician",
+      "humanReadableRole": "Magician",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "cannibal",
+      "firstNightReminder": "",
+      "otherNightReminder": "Wake the Cannibal and treat them like they have the ability of the most recently killed executee.",
+      "reminders": ["Poisoned", "Lunch"],
+      "setup": false,
+      "flavor": "I don’t like clowns. They taste funny.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "butler",
+          "reason": "If the Cannibal gains the Butler ability, the Cannibal learns this."
+        },
+        {
+          "id": "juggler",
+          "reason": "If the Juggler guesses on their first day and dies by execution, tonight the living Cannibal learns how many guesses the Juggler got correct."
+        },
+        {
+          "id": "zealot",
+          "reason": "If the Cannibal gains the Zealot ability, the Cannibal learns this."
+        },
+        {
+          "id": "poppygrower",
+          "reason": "If the Cannibal eats the Poppy Grower, then dies or loses the Poppy Grower ability, the Demon and Minions learn each other that night."
+        }
+      ],
+      "summary": "You have the ability of the recently killed executee. If they are evil, you are poisoned until a good player dies by execution.",
+      "icon": "cannibal",
+      "humanReadableRole": "Cannibal",
+      "script": "",
+      "type": "Townsfolk"
+    }
+  ],
+  "minion": [
+    {
+      "id": "widow",
+      "firstNightReminder": "Show the Grimoire for as long as the Widow needs. The Widow chooses a player.",
+      "otherNightReminder": "",
+      "reminders": ["Poisoned", "Knows"],
+      "remindersGlobal": [],
+      "setup": false,
+      "special": [
+        {
+          "name": "grimoire",
+          "type": "signal",
+          "time": "night"
+        }
+      ],
+      "flavor": "More wine? Château d’Ergot ’07 is a very special vintage. My yes, very special indeed.",
+      "firstNight": 28,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "alchemist",
+          "reason": "If the Alchemist has the Widow ability, they do not see the Grimoire."
+        },
+        {
+          "id": "magician",
+          "reason": "When the Widow sees the Grimoire, the Demon and Magician's character tokens are removed."
+        },
+        {
+          "id": "poppygrower",
+          "reason": "If the Poppy Grower is in play, the Widow does not see the Grimoire until the Poppy Grower dies."
+        },
+        {
+          "id": "damsel",
+          "reason": "If the Widow is (or has been) in play, the Damsel is poisoned."
+        }
+      ],
+      "summary": "On your 1st night, look at the Grimoire & choose a player: they are poisoned. 1 good player knows a Widow is in play.",
+      "icon": "widow",
+      "humanReadableRole": "Widow",
+      "script": "",
+      "type": "Minion"
+    },
+    {
+      "id": "goblin",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["Claimed"],
+      "setup": false,
+      "flavor": "You don’t want to insult the goblins. You really, really don’t. On a completely different note… can I have another piece of cake?",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.",
+      "icon": "goblin",
+      "humanReadableRole": "Goblin",
+      "script": "",
+      "type": "Minion"
+    },
+    {
+      "id": "psychopath",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Surprise!",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "Each day, before nominations, you may publicly choose a player: they die. If executed, you only die if you lose roshambo.",
+      "icon": "psychopath",
+      "humanReadableRole": "Psychopath",
+      "script": "",
+      "type": "Minion"
+    },
+    {
+      "id": "marionette",
+      "firstNightReminder": "Wake the Demon. Point to the player marked *IS THE MARIONETTE* and show the *THIS PLAYER IS* token and the Marionette character token.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "remindersGlobal": ["Is The Marionette"],
+      "setup": true,
+      "special": [
+        {
+          "type": "selection",
+          "name": "bag-disabled"
+        },
+        {
+          "type": "reveal",
+          "name": "replace-character"
+        }
+      ],
+      "flavor": "Words, words. They're all we have to go on.",
+      "firstNight": 21,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "lilmonsta",
+          "reason": "The Marionette neighbors a Minion, not the Demon. The Marionette is not woken to choose who takes the Lil' Monsta token, and does not learn they are the Marionette if they have the Lil' Monsta token."
+        },
+        {
+          "id": "poppygrower",
+          "reason": "When the Poppy Grower dies, the Demon learns the Marionette but the Marionette learns nothing."
+        },
+        {
+          "id": "snitch",
+          "reason": "The Marionette does not learn 3 not in-play characters. The Demon learns an extra 3 instead."
+        },
+        {
+          "id": "balloonist",
+          "reason": "If the Marionette thinks that they are the Balloonist, +1 Outsider might have been added."
+        },
+        {
+          "id": "damsel",
+          "reason": "The Marionette does not learn that a Damsel is in play."
+        },
+        {
+          "id": "huntsman",
+          "reason": "If the Marionette thinks that they are the Huntsman, the Damsel was added."
+        }
+      ],
+      "summary": "You think you are a good character, but you are not. The Demon knows who you are. [You neighbor the Demon]",
+      "icon": "marionette",
+      "humanReadableRole": "Marionette",
+      "script": "",
+      "type": "Minion"
+    }
+  ],
+  "outsider": [
+    {
+      "id": "puzzlemaster",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["Drunk", "Guess Used"],
+      "setup": false,
+      "flavor": "When one begins to think that some thing is merely some other thing, one is usually on the brink of an error. Patience, patience. Don’t confuse just and should with is and isn’t.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "1 player is drunk, even if you die. If you guess (once) who it is, learn the Demon player, but guess wrong & get false info.",
+      "icon": "puzzlemaster",
+      "humanReadableRole": "Puzzlemaster",
+      "script": "",
+      "type": "Outsider"
+    },
+    {
+      "id": "klutz",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Oops.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "When you learn that you died, publicly choose 1 alive player: if they are evil, your team loses.",
+      "icon": "klutz",
+      "humanReadableRole": "Klutz",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    },
+    {
+      "id": "golem",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["May Not Nominate"],
+      "setup": false,
+      "flavor": "Golem help? Golem smash! Golem help.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "You may only nominate once per game. When you do, if the nominee is not the Demon, they die.",
+      "icon": "golem",
+      "humanReadableRole": "Golem",
+      "script": "",
+      "type": "Outsider"
+    },
+    {
+      "id": "snitch",
+      "firstNightReminder": "Wake each Minion. Show the *THESE CHARACTERS ARE NOT IN PLAY* token and three not-in-play character tokens. Put each Minion to sleep.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "It was John.",
+      "firstNight": 15,
+      "otherNight": 0,
+      "summary": "Each Minion gets 3 bluffs.",
+      "icon": "snitch",
+      "humanReadableRole": "Snitch",
+      "script": "",
+      "type": "Outsider"
+    }
+  ],
+  "traveller": [],
+  "demon": [
+    {
+      "id": "lleech",
+      "firstNightReminder": "The Lleech chooses a player.",
+      "otherNightReminder": "The Lleech chooses a player.",
+      "reminders": ["Dead", "Poisoned"],
+      "setup": false,
+      "flavor": "Tasty, tasty, tasty, tasty, tasty, tasty, tasty, tasty brai- I mean pie! Yes. Tasty pie. That’s what I meant to say.",
+      "firstNight": 25,
+      "otherNight": 47,
+      "jinxes": [
+        {
+          "id": "mastermind",
+          "reason": "If the Mastermind is alive and the Lleech's host dies by execution, the Lleech lives but loses their ability."
+        },
+        {
+          "id": "slayer",
+          "reason": "If the Slayer slays the Lleech's host, the host dies."
+        }
+      ],
+      "summary": "Each night*, choose a player: they die. You start by choosing a player: they are poisoned. You die if & only if they are dead.",
+      "icon": "lleech",
+      "humanReadableRole": "Lleech",
+      "script": "",
+      "type": "Demon"
+    },
+    {
+      "id": "fanggu",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Fang Gu chooses a player.  If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the *YOU ARE* and Fang Gu tokens & give a thumbs-down.",
+      "reminders": ["Dead", "Once"],
+      "setup": true,
+      "flavor": "Your walls and your weapons are but smoke in dreams.",
+      "firstNight": 0,
+      "otherNight": 40,
+      "summary": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
+      "icon": "fanggu",
+      "humanReadableRole": "Fang Gu",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    },
+    {
+      "id": "kazali",
+      "firstNightReminder": "Wake the Kazali, allow them to choose Minions.",
+      "otherNightReminder": "The Kazali chooses a player.",
+      "reminders": ["Dead"],
+      "setup": true,
+      "flavor": "Gon(z)a7les6. Take cau8tun. The mech4an4ion is iNvert10d. E99ors insy6tum. Reco{7}fig.",
+      "firstNight": 3,
+      "otherNight": 50,
+      "jinxes": [
+        {
+          "id": "goon",
+          "reason": "The Kazali can choose that the Goon player is one of their evil Minions."
+        },
+        {
+          "id": "marionette",
+          "reason": "If the Kazali chooses to create a Marionette, they must choose one of their neighbors."
+        },
+        {
+          "id": "huntsman",
+          "reason": "If the Kazali chooses the Damsel to become a Minion, and a Huntsman is in play, a good player becomes the Damsel."
+        },
+        {
+          "id": "choirboy",
+          "reason": "The Kazali cannot choose the King to become a Minion if a Choirboy is in play."
+        },
+        {
+          "id": "soldier",
+          "reason": "The Kazali can choose that the Soldier player is one of their evil Minions."
+        }
+      ],
+      "summary": "Each night*, choose a player: they die. [You choose which players are which Minions. -? to +? Outsiders]",
+      "icon": "kazali",
+      "humanReadableRole": "Kazali",
+      "script": "",
+      "type": "Demon"
+    },
+    {
+      "id": "legion",
+      "firstNightReminder": "",
+      "otherNightReminder": "A player might die.",
+      "reminders": ["Dead", "About To Die"],
+      "setup": true,
+      "special": [
+        {
+          "type": "selection",
+          "name": "bag-duplicate"
+        }
+      ],
+      "flavor": "We are the chill wind on a winter’s day. We are the shadow in the moonless night. We are the poison in your tea and the whisper in your ear. We are everywhere.",
+      "firstNight": 0,
+      "otherNight": 34,
+      "jinxes": [
+        {
+          "id": "engineer",
+          "reason": "Legion and the Engineer cannot both be in play at the start of the game. If the Engineer creates Legion, most players (including all evil players) become evil Legion."
+        },
+        {
+          "id": "preacher",
+          "reason": "If the Preacher chooses Legion, Legion keeps their ability, but the Preacher might learn they are Legion."
+        },
+        {
+          "id": "minstrel",
+          "reason": "If Legion died by execution today, Legion keeps their ability, but the Minstrel might learn they are Legion."
+        },
+        {
+          "id": "hatter",
+          "reason": "If the Hatter dies and Legion is in play, nothing happens. If the Hatter dies and an evil player chooses Legion, all current evil players become Legion."
+        },
+        {
+          "id": "zealot",
+          "reason": "The Zealot might register as evil to Legion's ability."
+        }
+      ],
+      "summary": "Each night*, a player might die. Executions fail if only evil voted. You register as a Minion too. [Most players are Legion]",
+      "icon": "legion",
+      "humanReadableRole": "Legion",
+      "script": "",
+      "type": "Demon"
+    }
+  ],
+  "fabled": []
+}
