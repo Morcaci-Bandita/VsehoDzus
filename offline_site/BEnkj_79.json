@@ -1,0 +1,442 @@
+{
+  "loric": [],
+  "townsfolk": [
+    {
+      "id": "knight",
+      "firstNightReminder": "Point to the two non-Demon players marked *KNOW*.",
+      "reminders": ["Know", "Know"],
+      "setup": false,
+      "flavor": "When a man lies, he murders some part of the world.",
+      "firstNight": 58,
+      "otherNight": 0,
+      "summary": "You start knowing 2 players that are not the Demon.",
+      "icon": "knight",
+      "humanReadableRole": "Knight",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "pixie",
+      "firstNightReminder": "Show the Townsfolk character token marked *MAD*.",
+      "otherNightReminder": "",
+      "reminders": ["Mad", "Has Ability"],
+      "setup": false,
+      "flavor": "Round and round the garden, go. Little girls run to and fro. Little boys climb up the tree. Which of these should Pixie be? Ladies smile and go to town.  Lords with axe chop forest down. What’s yours is mine. What’s mine, divine. Silly little Pixie, me.",
+      "firstNight": 42,
+      "otherNight": 0,
+      "summary": "You start knowing 1 in-play Townsfolk. If you were mad that you were this character, you gain their ability when they die.",
+      "icon": "pixie",
+      "humanReadableRole": "Pixie",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "shugenja",
+      "firstNightReminder": "Point clockwise or anticlockwise around the circle.",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "これは夢。それも夢。すべて夢です。",
+      "firstNight": 61,
+      "otherNight": 0,
+      "summary": "You start knowing if your closest evil player is clockwise or anti-clockwise. If equidistant, this info is arbitrary.",
+      "icon": "shugenja",
+      "humanReadableRole": "Shugenja",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "highpriestess",
+      "firstNightReminder": "Point to a player.",
+      "otherNightReminder": "Point to a player.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "There is life behind the personality that uses personalities as masks. There are times when life puts off the mask and deep answers to deep.",
+      "firstNight": 68,
+      "otherNight": 86,
+      "summary": "Each night, learn which player the Storyteller believes you should talk to most.",
+      "icon": "highpriestess",
+      "humanReadableRole": "High Priestess",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "general",
+      "firstNightReminder": "Give a thumb signal.",
+      "otherNightReminder": "Give a thumb signal.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "I don’t have time for quotes.",
+      "firstNight": 69,
+      "otherNight": 87,
+      "summary": "Each night, you learn which alignment the Storyteller believes is winning: good, evil, or neither.",
+      "icon": "general",
+      "humanReadableRole": "General",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "preacher",
+      "firstNightReminder": "The Preacher chooses a player.  If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token and the Preacher token.",
+      "otherNightReminder": "The Preacher chooses a player.  If they chose a Minion: Put the Preacher to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token and the Preacher token.",
+      "reminders": ["No Ability", "No Ability", "No Ability"],
+      "setup": false,
+      "flavor": "It is better to be rich and healthy than poor and sick.",
+      "firstNight": 23,
+      "otherNight": 11,
+      "summary": "Each night, choose a player: a Minion, if chosen, learns this. All chosen Minions have no ability.",
+      "icon": "preacher",
+      "humanReadableRole": "Preacher",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "fortuneteller",
+      "firstNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
+      "otherNightReminder": "The Fortune Teller chooses 2 players. Nod if either is the Demon (or the *RED HERRING*).",
+      "reminders": ["Red Herring"],
+      "setup": false,
+      "flavor": "I sense great evil in your soul! But... that could just be your perfume. I am allergic to Elderberry.",
+      "firstNight": 51,
+      "otherNight": 70,
+      "summary": "Each night, choose 2 players: you learn if either is a Demon. There is a good player that registers as a Demon to you.",
+      "icon": "fortuneteller",
+      "humanReadableRole": "Fortune Teller",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "towncrier",
+      "firstNightReminder": "",
+      "otherNightReminder": "Either nod or shake your head.",
+      "reminders": ["Minions Not Nominated", "Minion Nominated"],
+      "setup": false,
+      "flavor": "Hear ye! Hear ye! Witchcraft in the labyrinth! Genius savant reveals all! Town in danger! Hear Ye!",
+      "firstNight": 0,
+      "otherNight": 74,
+      "summary": "Each night*, you learn if a Minion nominated today.",
+      "icon": "towncrier",
+      "humanReadableRole": "Town Crier",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "oracle",
+      "firstNightReminder": "",
+      "otherNightReminder": "Give a finger signal.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "Only the chosen may gaze beyond the veil. The dead are restless, and they point in silence toward the icy north.",
+      "firstNight": 0,
+      "otherNight": 75,
+      "summary": "Each night*, you learn how many dead players are evil.",
+      "icon": "oracle",
+      "humanReadableRole": "Oracle",
+      "script": "Sects & Violets",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "amnesiac",
+      "firstNightReminder": "Run the Amnesiac's ability, if applicable.",
+      "otherNightReminder": "Run the Amnesiac's ability, if applicable.",
+      "reminders": ["?", "?", "?"],
+      "setup": false,
+      "flavor": "Wait. What. Who? Oh, ok. Wait. What?",
+      "firstNight": 45,
+      "otherNight": 63,
+      "summary": "You do not know what your ability is. Each day, privately guess what it is: you learn how accurate you are.",
+      "icon": "amnesiac",
+      "humanReadableRole": "Amnesiac",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "ravenkeeper",
+      "firstNightReminder": "",
+      "otherNightReminder": "If the Ravenkeeper died tonight, the Ravenkeeper chooses a player. Show that player's character token.",
+      "reminders": [],
+      "setup": false,
+      "flavor": "My birds will avenge me! Fly! Fly, my sweet and dutiful pets! To the manor and to the river! To the alleys and to the salons! Fly!",
+      "firstNight": 0,
+      "otherNight": 68,
+      "summary": "If you die at night, you are woken to choose a player: you learn their character.",
+      "icon": "ravenkeeper",
+      "humanReadableRole": "Ravenkeeper",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "poppygrower",
+      "firstNightReminder": "Do not do the Minion Info and Demon Info steps. Wake the Demon, show the *THESE CHARACTERS ARE NOT IN PLAY* info token and any three good character tokens that are not in play.",
+      "otherNightReminder": "If the Poppy Grower died today or tonight, wake the Minions, show the *THIS IS THE DEMON* info token and point to the Demon. Put them to sleep. Wake the Demon, show the *THESE ARE YOUR MINIONS* info token and point to the Minions. Put the Demon to sleep.",
+      "reminders": ["Evil Wakes"],
+      "setup": false,
+      "flavor": "In the hidden groves of the deep forest, the black poppy dwells. To see its revelry is to be enchanted. To smell its thick aroma is to be lost forever, a slave to the gods of light and dark.",
+      "firstNight": 11,
+      "otherNight": 8,
+      "summary": "Minions & Demons do not know each other. If you die, they learn who each other are that night.",
+      "icon": "poppygrower",
+      "humanReadableRole": "Poppy Grower",
+      "script": "",
+      "type": "Townsfolk"
+    },
+    {
+      "id": "mayor",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "We must put our differences aside, and cease this senseless killing. We are all taxpayers after all. Well, most of us.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "If only 3 players live & no execution occurs, your team wins. If you die at night, another player might die instead.",
+      "icon": "mayor",
+      "humanReadableRole": "Mayor",
+      "script": "Trouble Brewing",
+      "type": "Townsfolk"
+    }
+  ],
+  "minion": [
+    {
+      "id": "poisoner",
+      "firstNightReminder": "The Poisoner chooses a player.",
+      "otherNightReminder": "The Poisoner chooses a player.",
+      "reminders": ["Poisoned"],
+      "setup": false,
+      "flavor": "Add compound Alpha to compound Beta... NOT TOO MUCH!",
+      "firstNight": 27,
+      "otherNight": 13,
+      "summary": "Each night, choose a player: they are poisoned tonight and tomorrow day.",
+      "icon": "poisoner",
+      "humanReadableRole": "Poisoner",
+      "script": "Trouble Brewing",
+      "type": "Minion"
+    },
+    {
+      "id": "harpy",
+      "firstNightReminder": "The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the *THIS CHARACTER SELECTED YOU* token, the Harpy token, then point to the 2nd target.",
+      "otherNightReminder": "The Harpy chooses two players.   Put the Harpy to sleep. Wake the 1st target. Show the *THIS CHARACTER SELECTED YOU* token, the Harpy token, then point to the 2nd target.",
+      "reminders": ["Mad", "2nd"],
+      "setup": false,
+      "flavor": "So fair a day I never did see, nor so fowl a presence hanging over me.",
+      "firstNight": 39,
+      "otherNight": 27,
+      "summary": "Each night, choose 2 players: tomorrow, the 1st player is mad that the 2nd is evil, or one or both might die.",
+      "icon": "harpy",
+      "humanReadableRole": "Harpy",
+      "script": "",
+      "type": "Minion"
+    },
+    {
+      "id": "cerenovus",
+      "firstNightReminder": "The Cerenovus chooses a player & a character.  Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",
+      "otherNightReminder": "The Cerenovus chooses a player & a character.  Put the Cerenovus to sleep. Wake the target. Show the *THIS CHARACTER SELECTED YOU* token, the Cerenovus token, then the madness-character token.",
+      "reminders": ["Mad"],
+      "setup": false,
+      "flavor": "Reality is merely an opinion. Specifically, my opinion.",
+      "firstNight": 37,
+      "otherNight": 24,
+      "jinxes": [
+        {
+          "id": "goblin",
+          "reason": "The Cerenovus may choose to make a player mad that they are the Goblin."
+        }
+      ],
+      "summary": "Each night, choose a player & a good character: they are “mad” they are this character tomorrow, or might be executed.",
+      "icon": "cerenovus",
+      "humanReadableRole": "Cerenovus",
+      "script": "Sects & Violets",
+      "type": "Minion"
+    },
+    {
+      "id": "boomdandy",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "special": [
+        {
+          "type": "ability",
+          "name": "pointing",
+          "time": "day"
+        }
+      ],
+      "flavor": "Tick... Tick... Tick... TOCK.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "If you are executed, all but 3 players die. After a 10 to 1 countdown, the player with the most players pointing at them, dies.",
+      "icon": "boomdandy",
+      "humanReadableRole": "Boomdandy",
+      "script": "",
+      "type": "Minion"
+    }
+  ],
+  "outsider": [
+    {
+      "id": "puzzlemaster",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["Drunk", "Guess Used"],
+      "setup": false,
+      "flavor": "When one begins to think that some thing is merely some other thing, one is usually on the brink of an error. Patience, patience. Don’t confuse just and should with is and isn’t.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "1 player is drunk, even if you die. If you guess (once) who it is, learn the Demon player, but guess wrong & get false info.",
+      "icon": "puzzlemaster",
+      "humanReadableRole": "Puzzlemaster",
+      "script": "",
+      "type": "Outsider"
+    },
+    {
+      "id": "plaguedoctor",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": ["Storyteller Ability"],
+      "setup": false,
+      "flavor": "Pleauze shtay shtill. Thinks nid tiime for hillink. Myrhh-myrhh.",
+      "firstNight": 0,
+      "otherNight": 0,
+      "jinxes": [
+        {
+          "id": "eviltwin",
+          "reason": "The Storyteller cannot gain the Evil Twin ability if the Plague Doctor dies."
+        },
+        {
+          "id": "fearmonger",
+          "reason": "If the Plague Doctor dies, a living Minion gains the Fearmonger ability in addition to their own ability, and learns this."
+        },
+        {
+          "id": "goblin",
+          "reason": "If the Plague Doctor dies, a living Minion gains the Goblin ability in addition to their own ability, and learns this."
+        },
+        {
+          "id": "spy",
+          "reason": "If the Plague Doctor dies, a living Minion gains the Spy ability in addition to their own ability, and learns this."
+        },
+        {
+          "id": "scarletwoman",
+          "reason": "If the Plague Doctor dies, a living Minion gains the Scarlet Woman ability in addition to their own ability, and learns this."
+        },
+        {
+          "id": "boomdandy",
+          "reason": "If the Plague Doctor is executed and the Storyteller would gain the Boomdandy ability, the Boomdandy ability triggers immediately."
+        },
+        {
+          "id": "baron",
+          "reason": "If the Storyteller gains the Baron ability, up to two players become not-in-play Outsiders."
+        },
+        {
+          "id": "marionette",
+          "reason": "If the Demon has a neighbor who is alive and a Townsfolk or Outsider when the Plague Doctor dies, that player becomes an evil Marionette. If there is already an extra evil player, this does not happen."
+        }
+      ],
+      "summary": "When you die, the Storyteller gains a Minion ability.",
+      "icon": "plaguedoctor",
+      "humanReadableRole": "Plague Doctor",
+      "script": "",
+      "type": "Outsider"
+    },
+    {
+      "id": "mutant",
+      "firstNightReminder": "",
+      "otherNightReminder": "",
+      "reminders": [],
+      "setup": false,
+      "flavor": "I am not a freak! I am a human being! Have mercy!",
+      "firstNight": 0,
+      "otherNight": 0,
+      "summary": "If you are “mad” about being an Outsider, you might be executed.",
+      "icon": "mutant",
+      "humanReadableRole": "Mutant",
+      "script": "Sects & Violets",
+      "type": "Outsider"
+    },
+    {
+      "id": "lunatic",
+      "firstNightReminder": "If there are 7 or more players, wake the Lunatic: Show the *THESE ARE YOUR MINIONS* token. Point to any players. Show the *THESE CHARACTERS ARE NOT IN PLAY* token. Show 3 good character tokens. Put the Lunatic to sleep. Wake the Demon. Show the *YOU ARE* info token and the Demon token. Show the *THIS PLAYER IS* info token and the Lunatic token, then point to the Lunatic.",
+      "otherNightReminder": "Do whatever needs to be done to simulate the Demon acting. Put the Lunatic to sleep. Wake the Demon. Show the Lunatic token & point to them, then their target(s).",
+      "reminders": ["Chosen", "Chosen", "Chosen"],
+      "setup": false,
+      "flavor": "I am the night... I think.",
+      "firstNight": 16,
+      "otherNight": 31,
+      "summary": "You think you are a Demon, but you are not. The Demon knows who you are & who you choose at night.",
+      "icon": "lunatic",
+      "humanReadableRole": "Lunatic",
+      "script": "Bad Moon Rising",
+      "type": "Outsider"
+    }
+  ],
+  "traveller": [],
+  "demon": [
+    {
+      "id": "nodashii",
+      "firstNightReminder": "",
+      "otherNightReminder": "The No Dashii chooses a player.",
+      "reminders": ["Dead", "Poisoned", "Poisoned"],
+      "setup": false,
+      "flavor": "By the sins of Arnoch, I feel thy laden stench. By the curs-ed sun and her foul legion of tiny grinning gods, I corrupt thee. By the blessed night and the hidden depths of the horrid and unholy sea, I end thy squalid life upon this plane.",
+      "firstNight": 0,
+      "otherNight": 41,
+      "summary": "Each night*, choose a player: they die. Your 2 Townsfolk neighbors are poisoned.",
+      "icon": "nodashii",
+      "humanReadableRole": "No Dashii",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    },
+    {
+      "id": "imp",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Imp chooses a player.  If the Imp chose themselves: Replace 1 alive Minion token with a spare Imp token. Put the old Imp to sleep. Wake the new Imp. Show the *YOU ARE* token, then show the Imp token.",
+      "reminders": ["Dead"],
+      "setup": false,
+      "flavor": "We must keep our wits sharp and our sword sharper. Evil walks among us, and will stop at nothing to destroy us good, simple folk, bringing our fine town to ruin. Trust no-one. But, if you must trust someone, trust me.",
+      "firstNight": 0,
+      "otherNight": 35,
+      "summary": "Each night*, choose a player: they die. If you kill yourself this way, a Minion becomes the Imp.",
+      "icon": "imp",
+      "humanReadableRole": "Imp",
+      "script": "Trouble Brewing",
+      "type": "Demon"
+    },
+    {
+      "id": "vigormortis",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Vigormortis chooses a player.  If that player is a Minion, poison a neighboring Townsfolk.",
+      "reminders": [
+        "Dead",
+        "Has Ability",
+        "Has Ability",
+        "Has Ability",
+        "Poisoned",
+        "Poisoned",
+        "Poisoned"
+      ],
+      "setup": true,
+      "flavor": "All doors are one door. All keys are one key. All cups are one cup, but whosoever drinketh of the water that I give shall never thirst, but the water shall be in him a well springing up into everlasting life.",
+      "firstNight": 0,
+      "otherNight": 44,
+      "summary": "Each night*, choose a player: they die. Minions you kill keep their ability & poison 1 Townsfolk neighbor. [-1 Outsider]",
+      "icon": "vigormortis",
+      "humanReadableRole": "Vigormortis",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    },
+    {
+      "id": "fanggu",
+      "firstNightReminder": "",
+      "otherNightReminder": "The Fang Gu chooses a player.  If they chose an Outsider (once only): Replace the Outsider token with the spare Fang Gu token. Put the Fang Gu to sleep. Wake the target. Show the *YOU ARE* and Fang Gu tokens & give a thumbs-down.",
+      "reminders": ["Dead", "Once"],
+      "setup": true,
+      "flavor": "Your walls and your weapons are but smoke in dreams.",
+      "firstNight": 0,
+      "otherNight": 40,
+      "summary": "Each night*, choose a player: they die. The 1st Outsider this kills becomes an evil Fang Gu & you die instead. [+1 Outsider]",
+      "icon": "fanggu",
+      "humanReadableRole": "Fang Gu",
+      "script": "Sects & Violets",
+      "type": "Demon"
+    }
+  ],
+  "fabled": []
+}
